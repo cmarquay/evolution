@@ -1,0 +1,19 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}CC BY Project Brevet Evolution.
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}Copyright CC BY ${date?date?string("yyyy")}.
+${licensePrefix}Brillet Camille.
+${licensePrefix}Fillon Aurélien.
+${licensePrefix}Foissac Nicola.
+${licensePrefix}Hanotel Guillaume.
+${licensePrefix}Henry-Brûlé Raphaël.
+${licensePrefix}Marquay Christian.
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}Creative Commons Attribution 3.0 France.
+${licensePrefix}http://creativecommons.org/licenses/by/3.0/fr/legalcode
+${licensePrefix?replace(" +$", "", "r")}
+<#if licenseLast??>
+${licenseLast}
+</#if>
