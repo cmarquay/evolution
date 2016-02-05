@@ -21,22 +21,24 @@ import java.util.ArrayList;
  *
  * @author nfoissac
  */
-public class Competence
+public abstract class Competence
 {
     private ArrayList<EnumCompetence> competences;
 
     public Competence()
     {
         this.competences = new ArrayList<EnumCompetence>();
-        this.competences.add(EnumCompetence.Aires);
     }
     
-    public ArrayList<EnumCompetence> getComptetences(){
+    public ArrayList<EnumCompetence> getCompetences(){
         return this.competences;
     }
     
+    public void AjoutCompetence(EnumCompetence competence){
+        getCompetences().add(competence);
+    }
     public EnumCompetence getCompetencesEnum (EnumCompetence competence){
-        return getComptetences().get(getComptetences().indexOf(competence));
+        return getCompetences().get(getCompetences().indexOf(competence));
     }
     
     public int getNiveauComptetence(EnumCompetence competence){
