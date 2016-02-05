@@ -15,18 +15,39 @@
  */
 package Competence;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author nfoissac
  */
 public class Competence
 {
-    public static void main(String[] args)
+    private ArrayList<EnumCompetence> competences;
+
+    public Competence()
     {
-        EnumCompetence test = EnumCompetence.NotionDeFonction;
-        System.out.println(test.getDescription());
-        System.out.println(test.getNiveau());
-        test.setNiveauPlus();
-        System.out.println(test.getNiveau());
+        this.competences = new ArrayList<EnumCompetence>();
+        this.competences.add(EnumCompetence.Aires);
+    }
+    
+    public ArrayList<EnumCompetence> getComptetences(){
+        return this.competences;
+    }
+    
+    public EnumCompetence getCompetencesEnum (EnumCompetence competence){
+        return getComptetences().get(getComptetences().indexOf(competence));
+    }
+    
+    public int getNiveauComptetence(EnumCompetence competence){
+        return getCompetencesEnum(competence).getNiveau();
+    }
+    
+    public boolean peutGainNiveau(EnumCompetence competence){
+        return getCompetencesEnum(competence).isUP();
+    }
+    
+    public void gainNiveauComptetence(EnumCompetence competence){
+        getCompetencesEnum(competence).gainNiveau();
     }
 }
