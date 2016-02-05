@@ -21,7 +21,23 @@ package Competence;
  */
 public enum EnumCompetence
 {
-NotionDeFonction("Notion de fonction");
+NotionDeFonction("Notion de fonction"),
+FonctionLinéaire("Fonction linéaire"),
+Statistique("Statistique"),
+NotionDeProbabilité("Notion de probabilité"),
+NombresEntiers("Nombres entiers"),
+NombresRationnels("Nombres rationnels"),
+CalculsElémentaires("Calculs élémentaires sur les radicaux"),
+EcrituresLittérales("Écritures littérales"),
+Equations("Équations du premier degré"),
+Inéquations("Inéquations du premier degré"),
+FiguresPlanes("Figures planes"),
+Configurations("Configurations dans l’espace"),
+Aires("Aires"),
+Volumes("Volumes"),
+Grandeurs("Grandeurs composées"),
+ChangementDunités("changement d’unités");
+
 private String description = "";
 private int niveau;
 
