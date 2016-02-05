@@ -21,5 +21,25 @@ package Competence;
  */
 public enum EnumCompetence
 {
+NotionDeFonction("Notion de fonction");
+private String description = "";
+private int niveau;
+
+    private EnumCompetence(String description)
+    {
+        this.description = description;
+        this.niveau = 0;
+    }
     
+    public String getDescription(){
+        return this.description;
+    }
+    
+    public int getNiveau(){
+        return this.niveau;
+    }
+    
+    public void setNiveauPlus(){
+        this.niveau +=1; 
+    }
 }

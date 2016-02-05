@@ -21,5 +21,12 @@ package Competence;
  */
 public class Competence
 {
-    
+    public static void main(String[] args)
+    {
+        EnumCompetence test = EnumCompetence.NotionDeFonction;
+        System.out.println(test.getDescription());
+        System.out.println(test.getNiveau());
+        test.setNiveauPlus();
+        System.out.println(test.getNiveau());
+    }
 }
