@@ -15,18 +15,23 @@
  */
 package Personnage;
 
+import Competence.CompetenceJoueur;
+
 /**
- *
+ * @version 0.1 changement sur les attribut ! prototypage competance et statiqique !
  * @author cbrillet
+ * @author nfoissac
  */
-public class Joueur extends Personnage {
+public class Joueur /*extends Personnage (class mere non finie) */{
     
-    private Competence comp;
+    private CompetenceJoueur comp;
+    private int vie;
+    private String nom;
     
-    public Joueur (String nom, int vie, Competence comp) {
-        this.vie = vie;
+    public Joueur (String nom) {
+        this.vie = 100;
         this.nom = nom;
-        this.comp = comp;
+        this.comp = new CompetenceJoueur();
     }
     
     public Joueur (String nom, int vie) {
@@ -34,12 +39,12 @@ public class Joueur extends Personnage {
         this.nom = nom;
     }
     
-    @Override
+    
     public String affichageVie () {
         return ""+this.vie;
     }
     
-    @Override
+    
     public String affichageNom () {
         return this.nom;
     }
@@ -53,7 +58,7 @@ public class Joueur extends Personnage {
         return this.vie;
     }
     
-    public void setCompetences (Competence comp) {
+    public void setCompetences (CompetenceJoueur comp) {
         this.comp = comp;
     }
 }
