@@ -55,13 +55,19 @@ header nav ul {
 
 header nav ul li {
 
- display: inline-block; 
- margin-left: 40px;
-    height: 100px;
-line-height: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: inline-block; 
+    height: 85px;
+    line-height: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
 }
+
+header nav ul>li {
+    border-top : 4px solid rgb(51,74,119);
+}
+
+
 
 header nav ul li a {
  color :white;
@@ -75,6 +81,22 @@ float: right;
     margin-right: 40px;
 
 }
+
+
+header nav ul div li a {
+ font-family: "Times New Roman",serif;
+}
+
+
+
+header nav ul>li:hover {
+    
+    background-color: rgb(44,64,101);
+    border-color: #ED5153;
+}
+
+
+
 
 
 
@@ -162,7 +184,8 @@ float: right;
     
     
     header nav ul li {
-        margin-left: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
         
     }
     
