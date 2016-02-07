@@ -20,7 +20,9 @@ import Statistique.Statistique;
  *
  * @author nfoissac
  */
-// refonte cometence prise des niveau biasser.
+
+// refontes des competences 
+// ajout gestion statistique : xp et cometences !
 public class Competence
 {
 
@@ -56,6 +58,7 @@ public class Competence
     public void ajouteExperience(int nombre)
     {
         this.experience += nombre;
+        Statistique.StatistiqueExperience(nombre);
     }
 
     private void definitExperienceNull()
@@ -71,6 +74,7 @@ public class Competence
     private void definitNiveauSuperieur()
     {
         this.niveau += 1;
+        Statistique.StatistiqueCompetence();
     }
     
     public boolean peutMonter()
@@ -91,6 +95,5 @@ public class Competence
         definitNiveauSuperieur();
         definitExperienceNull();
         definitExperienceMax();
-        Statistique.StatistiqueCompetence();
     }
 }
