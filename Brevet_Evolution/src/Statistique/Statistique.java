@@ -23,5 +23,15 @@ package Statistique;
 // class devra contenir toute les methode pour le calcul des scrore et divers stat!!
 public class Statistique
 {
+    static private int score=0;
+    static private int monstre_tuer=0;
+    static private int total_experience=0;
+    static private int total_competences=0;
     
+    static public void StatistiqueCompetence(){
+        total_competences++;
+    }
+        static public String afficheStatistiqueCompetence(){
+        return "total des competences :"+total_competences;
+    }
 }
