@@ -24,7 +24,7 @@ body {
 }
 
 header {
- margin-top: 40px;   
+ /*margin-top: 40px;*/   
 }
 
 
@@ -33,7 +33,10 @@ header h1 {
     color: white;
     font-size: 5em;
     text-align: center;
-    margin-bottom: 40px;
+    height: 120px;
+    line-height: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 
@@ -45,20 +48,25 @@ header nav {
 
 }
 
-
+header nav ul {
+ height : 100px;   
+}
 
 
 header nav ul li {
 
  display: inline-block; 
  margin-left: 40px;
+    height: 100px;
 line-height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header nav ul li a {
  color :white;
- font-family: 'blackjackregular';
- font-size: 2.5em; 
+font-family: 'Nunito', serif;
+ font-size: 1.6em; 
  text-decoration: none;
 }
 
@@ -74,16 +82,126 @@ float: right;
 
 
 
+/* MEDIA QUERIES TABLETTES */
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    
+    header nav ul div {
+     
+        position: absolute;
+        right : 0px;
+        top : 0px;
+        
+        
+    }
+  
+    header nav ul div li {
+        display: block;
+        height : 60px;
+        line-height: 60px;
+    }
+    
+    header nav ul li a  {
+        font-size: 1.6em;
+        
+        
+    }
+    
+}
 
 
 
 
+/* MEDIA QUERIES ENTRE PETITES TABLETTES ET GRANDES TABLETTES */
+
+@media screen and (min-width: 601px) and (max-width: 768px){
+    
+    
+    header h1 {
+        font-size: 3.5em;
+        width: 73%;
+        margin-left: 20px;
+    }
+    
+    
+    
+    header nav ul div {
+     
+       position: absolute;
+       right : 0px;
+       top : 0px;
+        
+        
+    }
+    
+     header nav ul div li {
+        display: block;
+        height : 60px;
+        line-height: 60px;
+    }
+    
+     header nav ul li a  {
+        font-size: 1.5em;
+        
+        
+    }
+    
+}
 
 
+/* MEDIA QUERIES ENTRE SMARTPHONE LANDSCAPE ET PETITES TABLETTES */
 
 
+@media screen and (min-width: 480px) and (max-width: 600px){
+    
+    
+    header h1 {
+        font-size: 3.5em;
+        width: 73%;
+    }
+    
+    
+    header nav ul li {
+        margin-left: 20px;
+        
+    }
+    
+    header nav ul div {
+     
+       position: absolute;
+       right : 0px;
+       top : 0px;
+        margin-right: 20px;
+        
+    }
+    
+     header nav ul div li {
+        display: block;
+        height : 60px;
+        line-height: 60px;
+        
+         
+    }
+    
+    
+    header nav ul div li a{
+        font-size: 1.2em;
+    }
+    
+    
+     header nav ul li a  {
+        font-size: 1.395em;
+        
+        
+    }
 
 
+    
+    
+    
+
+
+}
 
 
 
