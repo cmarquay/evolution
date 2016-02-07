@@ -31,8 +31,10 @@ public class TestCompetences
         System.out.println(test);
         System.out.println(Statistique.afficheStatistiqueCompetence());
         test.donneCompetence(0).gainNiveau();
+        test.donneCompetence(0).ajouteExperience(5000);
         System.out.println(test);
         System.out.println(Statistique.afficheStatistiqueCompetence());
+        System.out.println(Statistique.afficheStatistiqueExperience());
         
     }
 }
