@@ -15,9 +15,9 @@
  */
 package Test;
 
-import Competence.Competence;
-import Competence.CompetenceJoueur;
-import Competence.EnumCompetence;
+
+import Competence.*;
+import Statistique.Statistique;
 
 /**
  *
@@ -29,7 +29,10 @@ public class TestCompetences
     {
         CompetenceJoueur test = new CompetenceJoueur();
         System.out.println(test);
+        System.out.println(Statistique.afficheStatistiqueCompetence());
+        test.donneCompetence(0).gainNiveau();
         System.out.println(test);
+        System.out.println(Statistique.afficheStatistiqueCompetence());
         
     }
 }
