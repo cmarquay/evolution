@@ -15,41 +15,80 @@
  */
 package Competence;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author nfoissac
  */
-public abstract class Competence
+// refonte cometence prise des niveau biasser.
+public class Competence
 {
-    private ArrayList<EnumCompetence> competences;
 
-    public Competence()
+    private EnumCompetence competences;
+    private int niveau = 0;
+    private int experience = 0;
+    private int experieceMax = 100;
+
+    public Competence(EnumCompetence competences)
     {
-        this.competences = new ArrayList<EnumCompetence>();
+        this.competences = competences;
+    }
+
+    public String descrition () {
+        return this.competences.getDescription();
     }
     
-    public ArrayList<EnumCompetence> getCompetences(){
-        return this.competences;
+    public int donneNiveau()
+    {
+        return this.niveau;
+    }
+
+    public int donneExperience()
+    {
+        return this.experience;
+    }
+
+    public int donneExperienceMax()
+    {
+        return this.experieceMax;
+    }
+
+    public void ajouteExperience(int nombre)
+    {
+        this.experience += nombre;
+    }
+
+    private void definitExperienceNull()
+    {
+        this.experience = 0;
+    }
+
+    private void definitExperienceMax()
+    {
+        this.experieceMax = (int) (donneExperienceMax() * 0.03) + donneNiveau() + donneExperienceMax();
+    }
+
+    private void definitNiveauSuperieur()
+    {
+        this.niveau += 1;
     }
     
-    public void AjoutCompetence(EnumCompetence competence){
-        getCompetences().add(competence);
+    public boolean peutMonter()
+    {
+
+        if (donneExperience() >= donneExperienceMax())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    public EnumCompetence getCompetencesEnum (EnumCompetence competence){
-        return getCompetences().get(getCompetences().indexOf(competence));
-    }
-    
-    public int getNiveauComptetence(EnumCompetence competence){
-        return getCompetencesEnum(competence).getNiveau();
-    }
-    
-    public boolean peutGainNiveau(EnumCompetence competence){
-        return getCompetencesEnum(competence).isUP();
-    }
-    
-    public void gainNiveauComptetence(EnumCompetence competence){
-        getCompetencesEnum(competence).gainNiveau();
+
+    public void gainNiveau()
+    {
+        definitNiveauSuperieur();
+        definitExperienceNull();
+        definitExperienceMax();
     }
 }

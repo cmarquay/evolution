@@ -27,16 +27,9 @@ public class TestCompetences
 {
         public static void main(String[] args)
     {
-        Competence test = new CompetenceJoueur();
+        CompetenceJoueur test = new CompetenceJoueur();
         System.out.println(test);
-        System.out.println(test.getNiveauComptetence(EnumCompetence.Aires));
-        for (int i = 0; i < 20; i++)
-        {
-           test.gainNiveauComptetence(EnumCompetence.Aires);
-           System.out.println(test.getCompetencesEnum(EnumCompetence.Aires).getExperienceMax());
-        }
         System.out.println(test);
-        Competence test2 = new CompetenceJoueur();
-        System.out.print(test2);
+        
     }
 }

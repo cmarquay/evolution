@@ -15,27 +15,38 @@
  */
 package Competence;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author nfoissac
  */
-public class CompetenceJoueur extends Competence
+public class CompetenceJoueur()
 {
-
+    private ArrayList<Competence> competences;
     public CompetenceJoueur()
     {
-        super();
+        this.competences = new ArrayList<Competence>();
         for (EnumCompetence competence : EnumCompetence.values())
         {
-            AjoutCompetence(competence);
+            ajoutCompetence(new Competence(competence));
         }
+    }
+    
+    
+    private ArrayList<Competence> donneCompetences () {
+        return this.competences;
+    }
+    
+    private void ajoutCompetence(Competence competence){
+        donneCompetences().add(competence);
     }
     
     public String toString (){
         String retour="";
-        for ( EnumCompetence liste : getCompetences())
+        for ( Competence liste : donneCompetences())
         {
-            retour += liste.getDescription()+" "+liste.getNiveau()+"\n";
+            retour += liste.donneNiveau()+" "+liste.donneExperience()+" "+liste.donneExperienceMax()+liste.descrition()+"\n";
         }
         return retour;
     }

@@ -40,16 +40,10 @@ public enum EnumCompetence
     ChangementDunites("changement d’unités");
 
     private String description = "";
-    private int niveau;
-    private int experience;
-    private int experieceMax;
 
     private EnumCompetence(String description)
     {
         this.description = description;
-        this.niveau = 0;
-        this.experience = 0;
-        this.experieceMax = 100;
     }
 
     public String getDescription()
@@ -57,53 +51,4 @@ public enum EnumCompetence
         return this.description;
     }
 
-    public int getNiveau()
-    {
-        return this.niveau;
-    }
-
-    public int getExperience(){
-        return this.experience;
-    }
-    
-    public int getExperienceMax()
-    {
-        return this.experieceMax;
-    }
-
-    public void ajouteExperience(int nombre)
-    {
-        this.experience += nombre;
-    }
-
-    private void setExperienceNull()
-    {
-        this.experience = 0;
-    }
-
-    private void setNewExperienceMax()
-    {
-        this.experieceMax = (int) (getExperienceMax() * 0.03) + getNiveau() + getExperienceMax();
-    }
-
-    private void setNiveauPlus()
-    {
-        this.niveau += 1;
-    }
-    
-    public boolean isUP(){
-        
-        if (getExperience()>=getExperienceMax())
-        {
-            return true;
-        }else {
-            return false;
-        }
-    }
-    
-    public void gainNiveau(){
-        setNiveauPlus();
-        setExperienceNull();
-        setNewExperienceMax();
-    }
 }

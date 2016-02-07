@@ -19,6 +19,8 @@ package Statistique;
  *
  * @author nfoissac
  */
+
+// class devra contenir toute les methode pour le calcul des scrore et divers stat!!
 public class Statistique
 {
     
