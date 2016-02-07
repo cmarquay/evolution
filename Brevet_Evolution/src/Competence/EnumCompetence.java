@@ -22,22 +22,22 @@ package Competence;
 public enum EnumCompetence
 {
 
-    NotionDeFonction("Notion de fonction"),
-    FonctionLineaire("Fonction linéaire"),
-    Statistique("Statistique"),
-    NotionDeProbabilite("Notion de probabilité"),
-    NombresEntiers("Nombres entiers"),
-    NombresRationnels("Nombres rationnels"),
+    Aires("Aires"),
     CalculsElementaires("Calculs élémentaires sur les radicaux"),
+    ChangementDunites("changement d’unités"),
+    Configurations("Configurations dans l’espace"),
     EcrituresLitterales("Écritures littérales"),
     Equations("Équations du premier degré"),
-    Inequations("Inéquations du premier degré"),
     FiguresPlanes("Figures planes"),
-    Configurations("Configurations dans l’espace"),
-    Aires("Aires"),
-    Volumes("Volumes"),
+    FonctionLineaire("Fonction linéaire"),
     Grandeurs("Grandeurs composées"),
-    ChangementDunites("changement d’unités");
+    Inequations("Inéquations du premier degré"),
+    NombresEntiers("Nombres entiers"),
+    NombresRationnels("Nombres rationnels"),   
+    NotionDeFonction("Notion de fonction"),
+    NotionDeProbabilite("Notion de probabilité"),
+    Statistique("Statistique"),
+    Volumes("Volumes");
 
     private String description = "";
 
