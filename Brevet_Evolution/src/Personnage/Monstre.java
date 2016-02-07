@@ -15,19 +15,23 @@
  */
 package Personnage;
 
+import Competence.Competence;
+import Competence.CompetenceMonstre;
+import Competence.EnumCompetence;
 /**
  *
  * @author cbrillet
  */
 public class Monstre extends Personnage {
     
-    private String image;
-    private Competence comp;
+    private String image , nom;
+    private int vie;
+    private  CompetenceMonstre comp;
     
-    public Monstre (String nom, int vie, Competence comp, String img) {
-        this.vie = vie;
+    public Monstre (String nom,EnumCompetence comp, String img) {
+        this.vie = 100;
         this.nom = nom;
-        this.comp = comp;
+        this.comp =  new CompetenceMonstre(new Competence(comp));
         this.image = img;
     }
     
@@ -62,9 +66,5 @@ public class Monstre extends Personnage {
     public int prendDegats (int val) {
         this.vie -= val;
         return this.vie;
-    }
-    
-    public void setCompetences (Competence comp) {
-        this.comp = comp;
     }
 }
