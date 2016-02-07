@@ -15,6 +15,7 @@
  */
 package Competence;
 
+import Statistique.Statistique;
 /**
  *
  * @author nfoissac
@@ -90,5 +91,6 @@ public class Competence
         definitNiveauSuperieur();
         definitExperienceNull();
         definitExperienceMax();
+        Statistique.StatistiqueCompetence();
     }
 }
