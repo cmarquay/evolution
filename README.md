@@ -1,6 +1,14 @@
 # evolution
 LR University : 2nd year project
 
-* ajout de la doc prochainement (07/02/2016)
-* ajout du project netbean. (31/01/1016)
 
+CC BY Project Brevet Evolution.
+Copyright CC BY 2016.
+Brillet Camille.
+Fillon Aurélien.
+Foissac Nicola.
+Hanotel Guillaume.
+Henry-Brûlé Raphaël.
+Marquay Christian.
+Creative Commons Attribution 3.0 France.
+http://creativecommons.org/licenses/by/3.0/fr/legalcode
