@@ -28,9 +28,10 @@ public class CompetenceMonstre
     {
         this.competence = competence;
     }
-/*
- * manque code !!
- */
+    /*
+     * manque code !!
+     */
+
     public String toString()
     {
 

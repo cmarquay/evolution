@@ -16,6 +16,7 @@
 package Competence;
 
 import Statistique.Statistique;
+
 /**
  *
  * @author nfoissac
@@ -36,10 +37,11 @@ public class Competence
         this.competences = competences;
     }
 
-    public String descrition () {
+    public String descrition()
+    {
         return this.competences.getDescription();
     }
-    
+
     public int donneNiveau()
     {
         return this.niveau;
@@ -76,7 +78,7 @@ public class Competence
         this.niveau += 1;
         Statistique.StatistiqueCompetence();
     }
-    
+
     public boolean peutMonter()
     {
 

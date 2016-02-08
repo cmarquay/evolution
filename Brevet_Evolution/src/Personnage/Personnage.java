@@ -21,10 +21,12 @@ package Personnage;
  */
 abstract public class Personnage
 {
+
     private int vie;
     private String nom;
-    
-    public abstract String affichageVie ();
-    public abstract String affichageNom ();
-    
+
+    public abstract String affichageVie();
+
+    public abstract String affichageNom();
+
 }

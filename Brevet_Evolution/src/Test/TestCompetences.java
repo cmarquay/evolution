@@ -15,7 +15,6 @@
  */
 package Test;
 
-
 import Competence.*;
 import Statistique.Statistique;
 
@@ -25,7 +24,8 @@ import Statistique.Statistique;
  */
 public class TestCompetences
 {
-        public static void main(String[] args)
+
+    public static void main(String[] args)
     {
         CompetenceJoueur test = new CompetenceJoueur();
         System.out.println(test);
@@ -35,6 +35,6 @@ public class TestCompetences
         System.out.println(test);
         System.out.println(Statistique.afficheStatistiqueCompetence());
         System.out.println(Statistique.afficheStatistiqueExperience());
-        
+
     }
 }

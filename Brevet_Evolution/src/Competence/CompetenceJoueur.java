@@ -23,7 +23,9 @@ import java.util.ArrayList;
  */
 public class CompetenceJoueur
 {
+
     private ArrayList<Competence> competences;
+
     public CompetenceJoueur()
     {
         this.competences = new ArrayList<Competence>();
@@ -32,25 +34,28 @@ public class CompetenceJoueur
             ajoutCompetence(new Competence(competence));
         }
     }
-    
-    
-    private ArrayList<Competence> donneCompetences () {
+
+    private ArrayList<Competence> donneCompetences()
+    {
         return this.competences;
     }
-    
-    private void ajoutCompetence(Competence competence){
+
+    private void ajoutCompetence(Competence competence)
+    {
         donneCompetences().add(competence);
     }
-    
-    public Competence donneCompetence(int numero_competences){
+
+    public Competence donneCompetence(int numero_competences)
+    {
         return donneCompetences().get(numero_competences);
     }
-    
-    public String toString (){
-        String retour="";
-        for ( Competence liste : donneCompetences())
+
+    public String toString()
+    {
+        String retour = "";
+        for (Competence liste : donneCompetences())
         {
-            retour += liste.descrition()+" lvl "+liste.donneNiveau()+" xp "+liste.donneExperience()+" total "+liste.donneExperienceMax()+"\n";
+            retour += liste.descrition() + " lvl " + liste.donneNiveau() + " xp " + liste.donneExperience() + " total " + liste.donneExperienceMax() + "\n";
         }
         return retour;
     }
