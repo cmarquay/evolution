@@ -26,35 +26,34 @@ import Competence.EnumCompetence;
 public class Monstre extends Personnage
 {
 
-    private String image, nom;
-    private int vie;
+    private String image;
     private CompetenceMonstre comp;
 
     public Monstre(String nom, EnumCompetence comp, String img)
     {
-        this.vie = 100;
-        this.nom = nom;
+        this.setVie(100);
+        this.setNom(nom);
         this.comp = new CompetenceMonstre(new Competence(comp));
         this.image = img;
     }
 
     public Monstre(String nom, int vie, String img)
     {
-        this.vie = vie;
-        this.nom = nom;
+        this.setVie(vie);
+        this.setNom(nom);
         this.image = img;
     }
 
     @Override
     public String affichageVie()
     {
-        return "" + this.vie;
+        return "" + this.getVie();
     }
 
     @Override
     public String affichageNom()
     {
-        return this.nom;
+        return this.getNom();
     }
 
     public String getImage()
@@ -67,14 +66,21 @@ public class Monstre extends Personnage
         this.image = img;
     }
 
+    @Override
     public boolean estMort()
     {
-        return (this.vie <= 0);
+        return (this.getVie() <= 0);
     }
 
+    @Override
     public int prendDegats(int val)
     {
-        this.vie -= val;
-        return this.vie;
+        this.setVie(this.getVie()-val);
+        return this.getVie();
+    }
+    
+    public void setCompetences(EnumCompetence comp)
+    {
+        this.comp = new CompetenceMonstre(new Competence(comp));
     }
 }

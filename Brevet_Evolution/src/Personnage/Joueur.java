@@ -23,48 +23,49 @@ import Competence.CompetenceJoueur;
  * @author cbrillet
  * @author nfoissac
  */
-public class Joueur /*
- * extends Personnage (class mere non finie)
- */
+public class Joueur extends Personnage 
 
 {
 
     private CompetenceJoueur comp;
-    private int vie;
-    private String nom;
 
     public Joueur(String nom)
     {
-        this.vie = 100;
-        this.nom = nom;
+        this.setVie(100);
+        this.setNom(nom);
         this.comp = new CompetenceJoueur();
     }
 
     public Joueur(String nom, int vie)
     {
-        this.vie = vie;
-        this.nom = nom;
+        this.setVie(vie);
+        this.setNom(nom);
+        this.comp = new CompetenceJoueur();
     }
 
+    @Override
     public String affichageVie()
     {
-        return "" + this.vie;
+        return "" + this.getVie();
     }
 
+    @Override
     public String affichageNom()
     {
-        return this.nom;
+        return this.getNom();
     }
 
+    @Override
     public boolean estMort()
     {
-        return (this.vie <= 0);
+        return (this.getVie() <= 0);
     }
 
+    @Override
     public int prendDegats(int val)
     {
-        this.vie -= val;
-        return this.vie;
+        this.setVie(this.getVie()-val);
+        return this.getVie();
     }
 
     public void setCompetences(CompetenceJoueur comp)

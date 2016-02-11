@@ -28,5 +28,29 @@ abstract public class Personnage
     public abstract String affichageVie();
 
     public abstract String affichageNom();
+    
+    public abstract boolean estMort();
+    
+    public abstract int prendDegats(int val);
+    
+    public int getVie()
+    {
+        return this.vie;
+    }
+    
+    public String getNom()
+    {
+        return this.nom;
+    }
+    
+    public void setVie(int val)
+    {
+        this.vie = val;
+    }
+    
+    public void setNom(String nom)
+    {
+        this.nom = nom;
+    }
 
 }
