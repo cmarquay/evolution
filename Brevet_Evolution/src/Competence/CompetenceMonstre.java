@@ -35,6 +35,6 @@ public class CompetenceMonstre
     public String toString()
     {
 
-        return this.competence.descrition() + "\n";
+        return this.competence.description() + "\n";
     }
 }

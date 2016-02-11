@@ -55,7 +55,7 @@ public class CompetenceJoueur
         String retour = "";
         for (Competence liste : donneCompetences())
         {
-            retour += liste.descrition() + " lvl " + liste.donneNiveau() + " xp " + liste.donneExperience() + " total " + liste.donneExperienceMax() + "\n";
+            retour += liste.description() + " lvl " + liste.donneNiveau() + " xp " + liste.donneExperience() + " total " + liste.donneExperienceMax() + "\n";
         }
         return retour;
     }

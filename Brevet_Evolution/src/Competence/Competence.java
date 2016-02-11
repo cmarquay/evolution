@@ -37,7 +37,7 @@ public class Competence
         this.competences = competences;
     }
 
-    public String descrition()
+    public String description()
     {
         return this.competences.getDescription();
     }
