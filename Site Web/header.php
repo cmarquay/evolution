@@ -21,11 +21,10 @@
     <link title="css1" rel="stylesheet" href="css/style1.css"/>
     <!---- INSERTION DE LA POLICE "Nunito" ---->
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-    <title>Projet</title>
 </head>
 <body>
 <header>
-    <h1>Evolution</h1>
+    <h1>Brevet Evolution</h1>
 
     <!---- MENU DE NAVIGATION ---->
     <nav>
@@ -40,7 +39,7 @@
 
             <div>
                 <li><a href="#">Connexion</a></li>
-                <li><a href="#">Inscription</a></li>
+                <li><a href="inscription.php">Inscription</a></li>
             </div>
 
         </ul>
