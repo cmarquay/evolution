@@ -1,43 +1,42 @@
 $(document).ready(init);
 
-function init()
-{
+function init() {
 
   
     /*********** FONCTION OUVERTURE NAV 1 *************/
-     function openMenu(){
+    function openMenu() {
         $("#SousListe1 ul").animate({
-           width :'200px'   
-        });  
-     }
-    /*********** FONCTION FERMETURE NAV 1 *************/ 
-    function closeMenu(){
+            width : '200px'
+        });
+    }
+    /*********** FONCTION FERMETURE NAV 1 *************/
+    function closeMenu() {
         $("#SousListe1 ul").animate({
-           width :'0px'  
-        }); 
+            width : '0px'
+        });
     }
     
     /*********** FONCTION OUVERTURE NAV 2 *************/
-    function openGéométrie(){
+    function openGéométrie() {
         $("#SousListeGéométrie").animate({
-           width :'500px'   
+           width : '500px'   
         });
         $("#SousListeGéométrie ul").animate({
-           width :'500px'   
+           width : '500px'   
         });
     }
      
-    function openAlgèbre(){
+    function openAlgèbre() {
         $("#SousListeAlgèbre").animate({
-           width :'500px'     
+           width : '500px'     
         }); 
         $("#SousListeAlgèbre ul").animate({
-           width :'500px'             
+           width : '500px'             
         });     
     }
     
     /*********** FONCTION FERMETURE NAV 2 *************/  
-    function closeAlgèbre(){
+    function closeAlgèbre() {
         $("#SousListeAlgèbre").animate({
            width :'0px'  
         }); 
