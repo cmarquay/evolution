@@ -142,6 +142,173 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 
 
+/****************************************************** MENU JQUERY***********************************
+**************************************************************************************************/
+
+
+
+/************* MENU DE NAVIGATION COURS  *************/
+
+
+
+.nav1 {
+   position: absolute; 
+    width: 200px;
+    height: 600px;  
+}
+
+.nav1 ul{
+     position: relative;
+    height :850px;
+      width: 0px;
+   /* background-color: rgb(39,58,92); */
+    overflow: hidden;
+    background: linear-gradient(rgb(39,58,92),rgb(67,99,158));  
+}
+
+.nav1 ul li {
+    
+    height: 50px;
+    padding-top :25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.nav1 ul li a{
+    text-decoration: none;
+    color : white;
+    font-size: 1.7em;
+    font-family: 'Nunito';
+    line-height: 50px;
+}
+
+.nav1 ul li:hover {
+    background-color: rgb(39,58,92); 
+    border :  2px solid #ED5153;   
+}
+
+
+/**************** MENU COURS ALGEBRE ET GEOMETRIE ***************************/
+
+.nav2 {
+    position: absolute; 
+    width: 0px;
+    height: 850px;  
+    left: 200px;
+}
+
+.nav2 ul{
+     position: relative;
+    height :850px;
+      width: 0px;
+   /* background-color: rgb(39,58,92); */
+    overflow: hidden;
+    background: linear-gradient(rgb(67,99,158),rgb(39,58,92));  
+    
+}
+
+.nav2 ul li {
+    
+    height: 50px;
+    padding-top :25px;
+    padding-bottom: 25px;
+    text-align: center;
+    
+}
+
+.nav2 ul li a{
+    text-decoration: none;
+    color : white;
+    font-size: 1.3em;
+    font-family: 'Nunito';
+    line-height: 50px;
+}
+
+.nav2 ul li:hover {
+    background-color: rgb(39,58,92); 
+    border :  2px solid #ED5153;   
+}
+
+
+/*********************** SOUS MENU CHAPITRES ******************************/
+
+
+
+.nav3 {
+    position: absolute; 
+    width: 0px;
+    height: 850px;  
+    left: 700px;
+}
+
+.nav3 ul{
+     position: relative;
+    height :850px;
+      width: 0px;
+   /* background-color: rgb(39,58,92); */
+    overflow: hidden;
+    background: linear-gradient(rgb(39,58,92),rgb(67,99,158));  
+    
+}
+
+.nav3 ul li {
+    
+    height: 50px;
+    padding-top :25px;
+    padding-bottom: 25px;
+    text-align: center;
+    
+}
+
+.nav3 ul li a{
+    text-decoration: none;
+    color : white;
+    font-size: 1.3em;
+    font-family: 'Nunito';
+    line-height: 50px;
+}
+
+.nav3 ul li:hover {
+    background-color: rgb(39,58,92); 
+    border :  2px solid #ED5153;   
+}
+
+
+
+
+
+
+/*****************************************************************************************************************************************************************************************************
+**************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+main {
+    width: 100%;
+    height: 1000px;  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
