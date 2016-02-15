@@ -239,12 +239,22 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
     width: 0px;
     height: 850px;  
     left: 700px;
+    overflow: hidden;
+}
+
+.nav3 h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: gainsboro;
+    border: solid 2px black;
+    
 }
 
 .nav3 ul{
-     position: relative;
+    position: relative;
     height :850px;
-      width: 0px;
+    width: 0px;
    /* background-color: rgb(39,58,92); */
     overflow: hidden;
     background: linear-gradient(rgb(39,58,92),rgb(67,99,158));  

@@ -96,7 +96,9 @@
      <!-------------------SOUS LISTE ALGEBRE---------------------------------->
     
     <div id="SousListeNotionFonction" class="nav3">
+        
         <ul>
+            <h3>Notion de Fonction</h3>
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -104,6 +106,8 @@
     
     <div id="SousListeFonctionsLineaire" class="nav3">
         <ul>
+        <h3>Fonction linéaire, fonction affine</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -111,6 +115,8 @@
     
     <div id="SousListeStatistique" class="nav3">
         <ul>
+        <h3>Statistique</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -118,6 +124,8 @@
     
     <div id="SousListeProbabilité" class="nav3">
         <ul>
+        <h3>Notion de probabilité</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -125,6 +133,8 @@
     
     <div id="SousListeNombres" class="nav3">
         <ul>
+        <h3>Nombres entiers et rationnels</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -132,6 +142,8 @@
     
     <div id="SousListeCalculs" class="nav3">
         <ul>
+        <h3>Calculs élémentaires sur les radicaux</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -139,6 +151,8 @@
     
     <div id="SousListeEcritures" class="nav3">
         <ul>
+        <h3>Ecritures littérales</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -146,6 +160,8 @@
     
     <div id="SousListeEquations" class="nav3">
         <ul>
+        <h3>Equations et inéquations du premier degré</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -162,6 +178,8 @@
     
     <div  id="SousListeFigures" class="nav3">
         <ul>
+        <h3>Figures planes</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -169,6 +187,8 @@
     
     <div  id="SousListeConfigurationEspace" class="nav3">
         <ul>
+        <h3>Configurations dans l'espace</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -176,6 +196,8 @@
     
     <div  id="SousListeAires" class="nav3">
         <ul>
+        <h3>Aires et volumes</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
@@ -183,6 +205,8 @@
     
     <div  id="SousListeGrandeurs" class="nav3">
         <ul>
+        <h3>Grandeurs composées, changements d'unités</h3>
+        
             <li><a href="#">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
