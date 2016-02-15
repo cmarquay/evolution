@@ -263,19 +263,22 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 .nav3 ul li {
     
-    height: 50px;
-    padding-top :25px;
-    padding-bottom: 25px;
+    height: 100px;
+   /* padding-top :25px;
+    padding-bottom: 25px;*/
     text-align: center;
     
 }
 
 .nav3 ul li a{
+    display: inline-block;
     text-decoration: none;
     color : white;
     font-size: 1.3em;
     font-family: 'Nunito';
-    line-height: 50px;
+    line-height: 100px;
+    height: 100px;
+    width: 200px;
 }
 
 .nav3 ul li:hover {
@@ -293,14 +296,6 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 
 
-
-
-
-
-
-
-
-
 main {
     width: 100%;
     height: 1000px;  
@@ -310,10 +305,107 @@ main {
 
 
 
+/*****************************************************************
+********************* COURS **************************************
+*****************************************************************/
+
+
+
+.Cours {
+    
+    width: 60%;
+    height: 800px;
+    background-color: rgba(255,255,255,0.9);
+    margin-left: 20%;
+    padding : 35px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.Cours h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.Cours h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ED5153;
+}
+
+
+.Cours h5 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.Cours p {
+    
+ margin-left: 30px;   
+}
 
 
 
 
+.italic {
+ font-style: italic;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-left : 10%;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(51,74,119);  
+}
+
+footer p {
+    text-align: center;
+    line-height: 50px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Nunito';
+}
 
 
 
