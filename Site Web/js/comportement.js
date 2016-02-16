@@ -284,19 +284,6 @@ function init() {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /****************** OUVERTURE NAV1 **********************/
     $("#menu").click(function(){
         openMenu();
@@ -507,14 +494,6 @@ function init() {
         
         setTimeout(openGrandeurs,500); 
     });
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
