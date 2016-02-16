@@ -108,7 +108,7 @@
         <ul>
         <h3>Fonction linéaire, fonction affine</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="fonction_affine_lineaire.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>

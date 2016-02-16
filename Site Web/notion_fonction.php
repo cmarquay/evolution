@@ -17,11 +17,11 @@
         <h4>1) Notion de fonction</h4>
     
     
-        <h5>Définition :</h5>
+        <h6>Définition :</h6>
         <p>On appelle fonction de la variable <span class="italic">x</span> tout procédé qui, à chaque nombre <span class="italic">x</span>, associe un unique nombre.</p>
         
     
-        <h5>Exemple :</h5>
+        <h6>Exemple :</h6>
         <p>La fonction "carré" est le procédé qui à tout nombre <span class="italic">x</span> associe <span class="italic">x</span><sup>2</sup>. On peut nommer cette fonction à l'aide d'une lettre, par exemple <span class="italic">f</span>.</p>
         
         <p><span class="italic">f </span>: <span class="italic">x</span> &#x27FC<span class="italic"> x</span><sup>2</sup></p>
@@ -32,7 +32,7 @@
         
         
         
-        <h5>Remarques :</h5>
+        <h6>Remarques :</h6>
 
     
         <p>Un nombre ne peut avoir qu'une seule image (voir la définition).</p>
