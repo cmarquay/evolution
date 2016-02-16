@@ -29,6 +29,11 @@ body {
     background-color: rgb(67,99,158);
 }
 
+a {
+ 
+    text-decoration: none;
+    
+}
 /************* MISE EN PAGE DU TITRE *************/
 
 header h1 {

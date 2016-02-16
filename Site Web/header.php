@@ -24,7 +24,7 @@
 </head>
 <body>
 <header>
-    <h1>Brevet Evolution</h1>
+    <a href="index.php"><h1>Brevet Evolution</h1></a>
 
     <!---- MENU DE NAVIGATION ---->
     <nav>
