@@ -297,14 +297,13 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 /*******************************************************************************************************************************************************************
 **************************************************************************************************/
 
-
+/*
 
 main {
-    width: 100%;
-    height: 3500px;  
+    height: 4200px;  
     
 }
-
+*/
 
 
 
@@ -315,7 +314,7 @@ main {
 
 
 /*** HAUTEUR DE CHAQUE PAGE DE COURS  ***/
-
+/*
 #CoursNotionFonction {
     height: 1820px;
 }
@@ -326,6 +325,13 @@ main {
     
 }
 
+#CoursStatistique {
+     height :4220px; 
+    
+}
+*/
+
+
 
 /*** MISE EN PAGE D'UN COURS ***/
 
@@ -333,9 +339,9 @@ main {
 .Cours {
     
     width: 1200px;
-    
-    background-color: rgba(255,255,255,0.9);
-    margin-left: 20%;
+   /* display: flex;*/
+    background-color: rgba(255,255,255,1);
+    margin : auto;
     padding : 35px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
@@ -464,11 +470,12 @@ table tr td{
 /** FAIRE UNE FRACTION : class ="frac" **/
 
 span.frac {
-  display: inline-block;
-  font-size: 100%;
-  text-align: center;
+    display: inline-block;
+    font-size: 100%;
+    text-align: center;
     position: relative;
     top : 10px;
+    margin-bottom: 15px;
 }
 span.frac > sup {
   display: block;
@@ -499,8 +506,7 @@ span.frac > sub {
 
 
 footer {
-    /*clear: both;*/
-   /* display: none;*/
+
     margin-left : 10%;
     margin-bottom: 10px;
     width: 80%;

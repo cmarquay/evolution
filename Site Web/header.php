@@ -117,7 +117,7 @@
         <ul>
         <h3>Statistique</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="statistique.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>

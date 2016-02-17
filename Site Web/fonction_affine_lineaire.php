@@ -6,9 +6,8 @@
 
 
 
-<main>
+<main id="CoursFonctionAffineLineaire" class="Cours">
 
-    <div id="CoursFonctionAffineLineaire" class="Cours">
 
         
         <h2>Fonctions linéaires et fonctions affines</h2>
@@ -111,7 +110,6 @@ droite et <span class="italic">b</span> est l'ordonnée à l'origine.</p>
         
         <p class="image"><img src="images/graphique_fonction_affine.png" alt="Graphique fonction affine"/></p>
         
-        
         <h5>c) Déterminer une fonction affine par la donnée de deux nombres et leurs images</h5>
         
         <h6>Propriété</h6>
@@ -149,8 +147,7 @@ droite et <span class="italic">b</span> est l'ordonnée à l'origine.</p>
         
         <p>La fonction affine cherchée est <span class="italic">x</span> &#x27FC &minus;2<span class="italic">x</span> + 1.</p>
         
-        
-    </div>
+
     
 
 </main>

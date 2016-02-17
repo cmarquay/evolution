@@ -6,9 +6,8 @@
 
 
 
-<main>
+<main id="CoursNotionFonction" class="Cours">
 
-    <div id="CoursNotionFonction" class="Cours">
 
         <h2>Fonctions</h2>
         
@@ -125,7 +124,6 @@
         <p><span class='italic'>x</span> = &minus;1</p>
     
     
-    </div>
     
 
 </main>
