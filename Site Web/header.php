@@ -21,6 +21,8 @@
     <link title="css1" rel="stylesheet" href="css/style1.css"/>
     <!---- INSERTION DE LA POLICE "Nunito" ---->
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <!---- INSERTION DE LA POLICE "Sevillana" ---->
+    <link href='https://fonts.googleapis.com/css?family=Sevillana' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
