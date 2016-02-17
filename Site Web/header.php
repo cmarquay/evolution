@@ -82,7 +82,7 @@
     <!-- COURS GEOMETRIE -->
     <div id="SousListeGéométrie" class="nav2">
         <ul>
-                <li id="Figures"><a href="#">Sections planes</a></li>
+                <li id="Figures"><a href="#">Figures planes</a></li>
                 <li id="ConfigurationEspace"><a href="#">Configurations dans l’espace</a></li>  
                 <li id="Aires"><a href="#">Aires et volumes</a></li>
                 <li id="Grandeurs"><a href="#">Grandeurs composées, changement d’unités</a></li>  
@@ -178,9 +178,9 @@
     
     <div  id="SousListeFigures" class="nav3">
         <ul>
-        <h3>Sections planes</h3>
+        <h3>Figures planes</h3>
         
-            <li><a href="sections_planes.php">Cours</a></li>
+            <li><a href="figures_planes.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
    </div>
@@ -189,7 +189,7 @@
         <ul>
         <h3>Configurations dans l'espace</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="configuration_espace.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>
