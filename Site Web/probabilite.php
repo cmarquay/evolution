@@ -9,7 +9,7 @@
 <main id="CoursProbabilité" class="Cours">
 
     
-    <h2>Probabiltés</h2>
+    <h2>Probabilités</h2>
     
     
     <h4>1) Définitions et premières propriétés</h4>
