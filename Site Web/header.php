@@ -126,7 +126,7 @@
         <ul>
         <h3>Notion de probabilité</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="probabilite.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>

@@ -428,7 +428,6 @@ main {
 }
 
 
-
 #CoursNotionFonction .gauche {    
 
     float: left;
@@ -440,10 +439,33 @@ main {
 
 
 
+#CoursProbabilité .gauche {    
+
+    float: left;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 150px;
+}
+
+
+#CoursProbabilité .droite {
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+.droite ~ * {
+    clear: both;
+}
 
 
 .image ~ * {
-
     clear: both;
 }
 
