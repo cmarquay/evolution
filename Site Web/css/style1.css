@@ -295,13 +295,10 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 /*******************************************************************************************************************************************************************
 **************************************************************************************************/
 
-/*
-
-main {
-    height: 4200px;  
-    
+#index {
+    height: 645px;
 }
-*/
+
 
 
 
@@ -312,21 +309,12 @@ main {
 
 
 
-#index {
-    height: 645px;
-}
-
-
-
-
 
 /*** MISE EN PAGE D'UN COURS ***/
-
+/*** lui appliquer class="Cours" ***/
 
 .Cours {
-    
     width: 1200px;
-   /* display: flex;*/
     background-color: rgba(255,255,255,1);
     margin : auto;
     padding : 35px;
@@ -353,9 +341,7 @@ main {
     margin-left: 40px;
     text-decoration: underline;
     color : blue;
-    
 }
-
 
 .Cours h6 {
     font-size: 1em;
@@ -367,11 +353,9 @@ main {
 }
 
 
-.Cours p {
-    
- margin-left: 30px;   
+.Cours p {   
+    margin-left: 30px;   
 }
-
 
 
 
@@ -395,9 +379,10 @@ main {
  color: green;
 }
 
+/*** POLICE POUR UN CERCLE C ***/
 
 .cercle {
- font-family: 'sevillana';
+    font-family: 'sevillana';
     font-weight: bold;
 }
 
@@ -407,60 +392,57 @@ main {
 
 
 
-/** IMAGE A DROITE **/
+/** POUR METTRE UNE IMAGE A DROITE **/
+/** <p class="image"><img .... **/
 .image {
     display: inline-block;
-   /* float : right;*/
     margin-right: 40px;
     margin-bottom: 50px;  
     padding-top: 40px;
-    
 }
-
 
 .image img {
     border: 1px solid black;
 }
 
+.image ~ * {
+    clear: both;
+}
 
-
-
-/** LE CONTENU A GAUCHE **/
+/** LE CONTENU A GAUCHE (AVEC L'IMAGE A DROITE) **/
+/** <div class="gauche">.... **/
 .gauche {    
-
     float: left;
     margin-top: 50px;
     width: 500px;
     margin-right: 130px;
 }
 
-
 #CoursNotionFonction .gauche {    
-
     float: left;
     margin-top: 50px;
     width: 450px;
     margin-right: 50px;
 }
 
-
 #CoursProbabilité .gauche {    
-
     float: left;
     margin-top: 10px;
     width: 250px;
     margin-left: 150px;
 }
 
+/** METTRE DU CONTENU A DROITE **/
 
 #CoursProbabilité .droite {
     display: inline-block;
     margin-bottom: 100px;
     margin-top: 10px;
-
 }
 
-
+.droite ~ * {
+    clear: both;
+}
 
 #cas1 {
     float: left;
@@ -474,28 +456,16 @@ main {
     width: 300px;
 }
 
-
 #cas 2 ~ * {
- clear: both;   
+    clear: both;   
 }
 
 
-
-
-
-.droite ~ * {
-    clear: both;
-}
-
-
-.image ~ * {
-    clear: both;
-}
 
 /** MISE EN PAGE TABLEAU **/
 
 table {
- border-collapse: collapse   
+    border-collapse: collapse   
 }
 
 table tr td{
@@ -508,14 +478,8 @@ table tr td{
 
 
 #liste_cours {
-    
- margin-left: 80px;   
+    margin-left: 80px;   
 }
-
-
-
-
-
 
 
 
@@ -528,39 +492,30 @@ span.frac {
     position: relative;
     top : 10px;
     margin-bottom: 15px;
-    z-index: 1;
-    
+    z-index: 1; 
 }
+
 span.frac > sup {
-  display: block;
-  border-bottom: 1px solid;
-  font: inherit;
+    display: block;
+    border-bottom: 1px solid;
+    font: inherit;
 }
+
 span.frac > span {
-  display: none;
+    display: none;
 }
+
 span.frac > sub {
-  display: block;
-  font: inherit;
+    display: block;
+    font: inherit;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/** MISE EN PAGE DU FOOTER **/
 
 footer {
-
     margin-left : 10%;
     margin-bottom: 10px;
     width: 80%;
