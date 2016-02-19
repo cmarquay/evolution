@@ -27,7 +27,7 @@ class CompetenceMonstre
 
     public function __construct($competence)
     {
-        $this->_competence = $competence;
+        $this->_competence = new Competence($competence);
     }
     /*
      * manque code !!
@@ -35,7 +35,7 @@ class CompetenceMonstre
 
     public function toString()
     {
-        $retour .= $this->_competence->description() . " lvl " . $this->_competence->donneNiveau() . " xp " . $this->_competence->donneExperience() . " total " . $this->_competence->donneExperienceMax() . "\n";
+        $retour .= $this->_competence->description() . " lvl " . $this->_competence->donneNiveau();
         return $retour;
     }
 }
