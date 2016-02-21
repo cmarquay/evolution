@@ -1,5 +1,5 @@
 <?php
-    $titre = "Brevet Evolution";
+    $titre = "Fonctions linéaires, affines";
     include_once("header.php");
 
 ?>

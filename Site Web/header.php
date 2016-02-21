@@ -68,8 +68,8 @@
         <ul>
                 <li id="NotionFonction"><a href="#">Notion de fonction</a></li>
                 <li id="FonctionLineaire"><a href="#">Fonction linéaire, fonction affine</a></li>
-                <li id="Statistique"><a href="#">Statistique</a></li>
-                <li id="Probabilité"><a href="#">Notion de probabilité</a></li> 
+                <li id="Statistique"><a href="#">Statistiques</a></li>
+                <li id="Probabilité"><a href="#">Probabilités</a></li>
                 <li id="Nombres"><a href="#">Nombres entiers et rationnels</a></li>
                 <li id="Calculs"><a href="#">Calculs élémentaires sur les radicaux</a></li>
                 <li id="Ecritures"><a href="#">Écritures littérales</a></li>
@@ -117,7 +117,7 @@
     
     <div id="SousListeStatistique" class="nav3">
         <ul>
-        <h3>Statistique</h3>
+        <h3>Statistiques</h3>
         
             <li><a href="statistique.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
@@ -126,7 +126,7 @@
     
     <div id="SousListeProbabilité" class="nav3">
         <ul>
-        <h3>Notion de probabilité</h3>
+        <h3>Probabilités</h3>
         
             <li><a href="probabilite.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
@@ -137,7 +137,7 @@
         <ul>
         <h3>Nombres entiers et rationnels</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="entiers_rationnels.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>
@@ -146,7 +146,7 @@
         <ul>
         <h3>Calculs élémentaires sur les radicaux</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="calculs_radicaux.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>
@@ -155,7 +155,7 @@
         <ul>
         <h3>Ecritures littérales</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="ecritures_litterales.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>
@@ -164,7 +164,7 @@
         <ul>
         <h3>Equations et inéquations du premier degré</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="equations_inequations.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>

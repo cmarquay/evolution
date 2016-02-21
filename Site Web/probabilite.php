@@ -1,5 +1,5 @@
 <?php
-    $titre = "Brevet Evolution";
+    $titre = "Probabilités";
     include_once("header.php");
 
 ?>

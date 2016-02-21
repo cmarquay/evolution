@@ -1,5 +1,5 @@
 <?php
-    $titre = "Brevet Evolution";
+    $titre = "Notion de fonction";
     include_once("header.php");
 
 ?>
@@ -9,7 +9,7 @@
 <main id="CoursNotionFonction" class="Cours">
 
 
-        <h2>Fonctions</h2>
+        <h2>Notion de fonction</h2>
         
     
     
@@ -122,8 +122,6 @@
         <p>2<span class='italic'>x</span>+6 = 4</p>
         <p>2<span class='italic'>x</span> = &minus;2</p>
         <p><span class='italic'>x</span> = &minus;1</p>
-    
-    
     
 
 </main>
