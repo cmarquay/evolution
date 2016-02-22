@@ -200,7 +200,7 @@
         <ul>
         <h3>Aires et volumes</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="aires_volumes.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>
@@ -209,7 +209,7 @@
         <ul>
         <h3>Grandeurs composées, changements d'unités</h3>
         
-            <li><a href="#">Cours</a></li>
+            <li><a href="grandeurs_changements.php">Cours</a></li>
             <li><a href="#">Quiz</a></li>
         </ul>
     </div>

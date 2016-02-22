@@ -1,7 +1,6 @@
 <?php
-    $titre = "Brevet Evolution";
+    $titre = "Configuration espace";
     include_once("header.php");
-
 ?>
 
 

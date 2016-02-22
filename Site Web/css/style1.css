@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -30,7 +30,7 @@ a {
 /************* MISE EN PAGE DU TITRE *************/
 
 header h1 {
-    font-family: 'blackjackregular';
+    font-family: 'blackjackregular', sans-serif;
     color: white;
     font-size: 5em;
     text-align: center;
@@ -159,7 +159,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 .nav1 ul{
      position: relative;
     height :850px;
-      width: 0px;
+      width: 0;
    /* background-color: rgb(39,58,92); */
     overflow: hidden;
     background: linear-gradient(rgb(39,58,92),rgb(67,99,158));  
@@ -177,7 +177,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
     text-decoration: none;
     color : white;
     font-size: 1.7em;
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     line-height: 50px;
 }
 
@@ -191,7 +191,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 .nav2 {
     position: absolute; 
-    width: 0px;
+    width: 0;
     height: 850px;  
     left: 200px;
     z-index: 2;
@@ -200,7 +200,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 .nav2 ul{
      position: relative;
     height :850px;
-      width: 0px;
+      width: 0;
    /* background-color: rgb(39,58,92); */
     overflow: hidden;
     background: linear-gradient(rgb(67,99,158),rgb(39,58,92));  
@@ -218,9 +218,9 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 .nav2 ul li a{
     text-decoration: none;
-    color : white;
+    color: white;
     font-size: 1.3em;
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     line-height: 50px;
 }
 
@@ -236,7 +236,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 .nav3 {
     position: absolute; 
-    width: 0px;
+    width: 0;
     height: 850px;  
     left: 700px;
     overflow: hidden;
@@ -255,7 +255,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 .nav3 ul{
     position: relative;
     height :850px;
-    width: 0px;
+    width: 0;
    /* background-color: rgb(39,58,92); */
     overflow: hidden;
     background: linear-gradient(rgb(39,58,92),rgb(67,99,158));  
@@ -276,7 +276,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
     text-decoration: none;
     color : white;
     font-size: 1.3em;
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     line-height: 100px;
     height: 100px;
     width: 200px;
@@ -363,26 +363,32 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 /*** POLICE EN ITALIQUE  ***/
 .italic {
- font-style: italic;   
+    font-style: italic;
 }
 
 
 /*** POLICE ROUGE ***/
 
 .rouge {
- color: red;   
+    color: red;
 }
 
 /*** POLICE VERTE ***/
 
 .vert {
- color: green;
+    color: green;
+}
+
+/*** POLICE VIOLETTE ***/
+
+.violet {
+    color: purple;
 }
 
 /*** POLICE POUR UN CERCLE C ***/
 
 .cercle {
-    font-family: 'sevillana';
+    font-family: 'sevillana', sans-serif;
     font-weight: bold;
 }
 
@@ -456,7 +462,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
     width: 300px;
 }
 
-#cas 2 ~ * {
+#cas2 ~ * {
     clear: both;   
 }
 
@@ -468,10 +474,14 @@ table {
     border-collapse: collapse   
 }
 
-table tr td{
+table tr td, table tr th {
     border: 1px solid black;
     width: 60px;
     text-align: center;
+}
+
+.large {
+    width: 150px;
 }
 
 /** MISE EN PAGE UL DES COURS **/
@@ -532,7 +542,7 @@ footer p a {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
-    font-family: 'Nunito';
+    font-family: 'Nunito',sans-serif;
 }
 
 
@@ -555,13 +565,13 @@ footer p a {
        
     header nav ul div {
         position: absolute;
-        right : 0px;
-        top : 0px;
+        right: 0;
+        top: 0;
     }
   
     header nav ul div li {
         display: block;
-        height : 60px;
+        height: 60px;
         line-height: 60px;
     }
     
@@ -588,13 +598,13 @@ footer p a {
     
     header nav ul div {
        position: absolute;
-       right : 0px;
-       top : 0px; 
+       right: 0;
+       top: 0;
     }
     
      header nav ul div li {
         display: block;
-        height : 60px;
+        height: 60px;
         line-height: 60px;
     }
     
@@ -624,8 +634,8 @@ footer p a {
     
     header nav ul div {
         position: absolute;
-        right : 0px;
-        top : 0px;
+        right: 0;
+        top: 0;
         margin-right: 20px;
     }
     

@@ -1,7 +1,6 @@
 <?php
-    $titre = "Brevet Evolution";
+    $titre = "Figures planes";
     include_once("header.php");
-
 ?>
 
 
