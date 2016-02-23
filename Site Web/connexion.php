@@ -3,7 +3,7 @@
  * fichier connexion_base.php
  */
     $PARAM_hote='localhost'; // le chemin vers le serveur
-    $PARAM_nom_bd='BDDevolution'; // le nom de votre base de données
+    $PARAM_nom_bd='BDD-test'; // le nom de votre base de données
     $PARAM_utilisateur='root'; // nom d'utilisateur pour se connecter
     $PARAM_mdp=''; // mot de passe de l'utilisateur pour se connecter
     try {
