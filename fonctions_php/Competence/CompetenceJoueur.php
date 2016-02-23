@@ -30,16 +30,16 @@ class CompetenceJoueur
         $this->_competences = array();
         foreach (array_keys(Competence::$enum) as $competence)
         {
-            ajoutCompetence(new Competence($competence));
+            $this->ajoutCompetence(new Competence($competence));
         }
     }
 
-    private function donneCompetences()
+    public function donneCompetences()
     {
         return $this->_competences;
     }
 
-    private function ajoutCompetence($competence)
+    public function ajoutCompetence($competence)
     {
         array_push($this->_competences,$competence);
     }

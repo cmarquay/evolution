@@ -23,16 +23,17 @@
 include "../Personnage/Personnage.php";
 include "../Personnage/Joueur.php";
 include "../Personnage/Monstre.php";
+include "../Competence/Competence.php";
 include "../Competence/CompetenceJoueur.php";
 include "../Competence/CompetenceMonstre.php";
 include "../Statistique/Statistique.php";
 
 $test = new CompetenceJoueur;
-echo $test;
+echo $test->toString();
 System.out.println(Statistique.afficheStatistiqueCompetence());
 $test->donneCompetence(0)->gainNiveau();
 $test->donneCompetence(0)->ajouteExperience(5000);
-echo $test;
+echo $test->toString();
 echo Statistique::afficheStatistiqueCompetence();
 echo Statistique::afficheStatistiqueExperience();
 
