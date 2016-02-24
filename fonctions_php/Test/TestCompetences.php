@@ -30,7 +30,7 @@ include "../Statistique/Statistique.php";
 
 $test = new CompetenceJoueur;
 echo $test->toString();
-System.out.println(Statistique.afficheStatistiqueCompetence());
+echo Statistique::afficheStatistiqueCompetence();
 $test->donneCompetence(0)->gainNiveau();
 $test->donneCompetence(0)->ajouteExperience(5000);
 echo $test->toString();

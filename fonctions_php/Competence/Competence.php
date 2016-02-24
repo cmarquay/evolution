@@ -92,7 +92,7 @@ class Competence
 
     private function definitExperienceMax()
     {
-        $this->_experienceMax = (int) (donneExperienceMax() * 0.03) + donneNiveau() + donneExperienceMax();
+        $this->_experienceMax = (int) ($this->donneExperienceMax() * 0.03) + $this->donneNiveau() + $this->donneExperienceMax();
     }
 
     private function definitNiveauSuperieur()
@@ -116,9 +116,9 @@ class Competence
 
     public function gainNiveau()
     {
-        definitNiveauSuperieur();
-        definitExperienceNull();
-        definitExperienceMax();
+        $this->definitNiveauSuperieur();
+        $this->definitExperienceNull();
+        $this->definitExperienceMax();
     }
 }
 

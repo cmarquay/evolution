@@ -46,17 +46,17 @@ class CompetenceJoueur
 
     public function donneCompetence($numero_competence)
     {
-        return donneCompetences()[$numero_competence];
+        return $this->donneCompetences()[$numero_competence];
     }
 
     public function toString()
     {
         $retour = "";
-        foreach (array_keys($this->_competences) as $competence)
+        foreach ($this->_competences as $competence)
         {
             $retour .= $competence->description() . " lvl " . $competence->donneNiveau() . " xp " . $competence->donneExperience() . " total " . $competence->donneExperienceMax() . "\n";
         }
-        return retour;
+        return $retour;
     }
 }
 
