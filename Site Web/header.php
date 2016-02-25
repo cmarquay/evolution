@@ -33,7 +33,7 @@
         <ul>
 
             <li id="menu" ><a href="#">Cours</a></li>
-            <li><a href="#">Mémo</a></li>
+            <li><a href="memo.php">Mémo</a></li>
             <li><a href="#">Quiz</a></li>
             <li><a href="#">Leaderboard</a></li>
 

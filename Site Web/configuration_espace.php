@@ -231,6 +231,9 @@ polygone mesurent 120°.</p>
     
     
     
+    <h4><a href="cours/sections-planes.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
+
+    <h4><a href="cours/angles%20r%C3%A9guliers.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
     
     
     

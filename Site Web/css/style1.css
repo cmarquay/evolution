@@ -377,7 +377,8 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     margin : auto;
     padding : 35px;
-    width: 1200px;
+    width: 1000px;
+    height : 800px;
 }
 
 .Quiz h2 {
@@ -404,6 +405,14 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 }
 
 
+
+/**** MEMO *****/
+
+#Memo {
+    
+    text-align: center;
+    font-size: 3em;
+}
 
 
 

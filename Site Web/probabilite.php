@@ -154,7 +154,7 @@
     
     <p><span class="italic">p</span>(<span class="italic">face ; vert</span>) = <span class="frac"><sup>1</sup><span>/</span><sub>2</sub></span> &times; <span class="frac"><sup>5</sup><span>/</span><sub>10</sub></span> = <span class="frac"><sup>5</sup><span>/</span><sub>20</sub></span> = <span class="frac"><sup>1</sup><span>/</span><sub>4</sub></span></p>
     
-    
+    <h4><a href="cours/Les%20probabilites.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
     
     
 </main>

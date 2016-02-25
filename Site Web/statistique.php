@@ -125,7 +125,7 @@ moins 25 % des valeurs de la série statistique soient inférieures ou égales �
         
         <p><img src="images/stat_img8.png" alt="tableau stat 8"/></p>
         
-        
+        <h4><a href="cours/Les%20statistiques.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
 
 
 </main>

@@ -123,6 +123,8 @@
         <p>2<span class='italic'>x</span> = &minus;2</p>
         <p><span class='italic'>x</span> = &minus;1</p>
     
+    <h4><a href="cours/Notion%20de%20fonction.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
+    
 
 </main>
 

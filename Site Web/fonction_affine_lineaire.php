@@ -146,6 +146,8 @@ droite et <span class="italic">b</span> est l'ordonnée à l'origine.</p>
         <p><span class="italic">b</span> = &minus;3 + 4 = 1</p>
         
         <p>La fonction affine cherchée est <span class="italic">x</span> &#x27FC &minus;2<span class="italic">x</span> + 1.</p>
+    
+    <h4><a href="cours/Fonction%20affine_lineaire.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
         
 
     

@@ -219,7 +219,9 @@ le théorème de Pythagore</p>
 <p><span class="frac"><sup>sin <span class="italic">x</span></sup><span>/</span><sub>cos <span class="italic">x</span></sub></span> = <span class="frac"><sup><span class="italic">AB</span></sup><span>/</span><sub><span class="italic">AC</span></sub></span> = <span class="frac"><sup><span class="italic">AC</span></sup><span>/</span><sub><span class="italic">BC</span></sub></span> = <span class="frac"><sup><span class="italic">AB</span></sup><span>/</span><sub><span class="italic">BC</span></sub></span> = tan <span class="italic">x</span> .</p>
     
     
-    
+    <h4><a href="cours/thal%C3%A8s.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
+
+    <h4><a href="cours/trigonom%C3%A9trie.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
 
     </main>
 
