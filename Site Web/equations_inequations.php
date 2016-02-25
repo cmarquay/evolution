@@ -8,7 +8,7 @@
     <main id="CoursNotionFonction" class="Cours">
 
 
-        <h2>Equations et inéquations du premier degré </h2>
+        <h2>Equations et inéquations du premier degré</h2>
 
 
 

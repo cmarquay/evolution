@@ -292,8 +292,7 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 
 
-/*******************************************************************************************************************************************************************
-**************************************************************************************************/
+/****************************************************************/
 
 #index {
     height: 645px;
@@ -310,15 +309,15 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 
 
-/*** MISE EN PAGE D'UN COURS ***/
+/***** MISE EN PAGE D'UN COURS *****/
 /*** lui appliquer class="Cours" ***/
 
 .Cours {
-    width: 1200px;
     background-color: rgba(255,255,255,1);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     margin : auto;
     padding : 35px;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 1200px;
 }
 
 .Cours h2 {
@@ -355,6 +354,53 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 .Cours p {   
     margin-left: 30px;   
+}
+
+
+
+
+
+/*****************************************************************
+********************* QUIZZ **************************************
+*****************************************************************/
+
+
+
+
+
+/***** MISE EN PAGE D'UN QUIZ *****/
+/*** lui appliquer class="Quiz" ***/
+
+.Quiz {
+    background-color: #FFFFFF;
+    color: #273A5C;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin : auto;
+    padding : 35px;
+    width: 1200px;
+}
+
+.Quiz h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.Quiz h3 {
+    color: #ED5153;
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.Quiz form {
+    margin: auto;
+    width: 40%;
+}
+
+.Quiz form p+input {
+    float: right;
 }
 
 
@@ -526,11 +572,10 @@ span.frac > sub {
 /** MISE EN PAGE DU FOOTER **/
 
 footer {
-    margin-left : 10%;
+    background-color: rgb(51,74,119);
+    margin : auto;
     margin-bottom: 10px;
-    width: 80%;
-    height: 50px;
-    background-color: rgb(51,74,119);  
+    width: 1200px;
 }
 
 footer p {

@@ -3,7 +3,7 @@
     include_once("header.php");
 ?>
 
-<main id="CoursNotionFonction" class="Cours">
+<main class="Cours">
 
 
     <h2 id="haut">Nombres entiers et rationnels</h2>

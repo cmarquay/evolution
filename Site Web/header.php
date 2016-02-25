@@ -138,7 +138,7 @@
         <h3>Nombres entiers et rationnels</h3>
         
             <li><a href="entiers_rationnels.php">Cours</a></li>
-            <li><a href="#">Quiz</a></li>
+            <li><a href="ER_quiz.php">Quiz</a></li>
         </ul>
     </div>
     
@@ -147,7 +147,7 @@
         <h3>Calculs élémentaires sur les radicaux</h3>
         
             <li><a href="calculs_radicaux.php">Cours</a></li>
-            <li><a href="#">Quiz</a></li>
+            <li><a href="CER_quiz.php">Quiz</a></li>
         </ul>
     </div>
     
@@ -156,7 +156,7 @@
         <h3>Ecritures littérales</h3>
         
             <li><a href="ecritures_litterales.php">Cours</a></li>
-            <li><a href="#">Quiz</a></li>
+            <li><a href="EL_quiz.php">Quiz</a></li>
         </ul>
     </div>
     
@@ -165,7 +165,7 @@
         <h3>Equations et inéquations du premier degré</h3>
         
             <li><a href="equations_inequations.php">Cours</a></li>
-            <li><a href="#">Quiz</a></li>
+            <li><a href="EI_quiz.php">Quiz</a></li>
         </ul>
     </div>
         

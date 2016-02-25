@@ -2,13 +2,13 @@ $(document).ready(init);
 
 function init() {
 
-  
     /*********** FONCTION OUVERTURE NAV 1 *************/
     function openMenu() {
         $("#SousListe1 ul").animate({
             width : '200px'
         });
     }
+
     /*********** FONCTION FERMETURE NAV 1 *************/
     function closeMenu() {
         $("#SousListe1 ul").animate({
@@ -54,9 +54,7 @@ function init() {
         });
     }
     
-    
-    
-        /*********** FONCTION OUVERTURE NAV 3 *************/
+    /*********** FONCTION OUVERTURE NAV 3 *************/
 
     function openNotionFonction(){
         $("#SousListeNotionFonction").animate({
@@ -165,11 +163,6 @@ function init() {
             width : '300px'
         });  
     }
-    
-    
-    
-    
-    
     
     /*********** FONCTION FERMETURE NAV 3 *************/  
 
@@ -281,16 +274,10 @@ function init() {
         });  
     }
     
-    
-    
-    
     /****************** OUVERTURE NAV1 **********************/
     $("#menu").click(function(){
         openMenu();
     });
-
-    
-    
  
     /****************** OUVERTURE NAV2 ALGEBRE **********************/
     
@@ -331,8 +318,6 @@ function init() {
         setTimeout(closeAlgèbre,340);
         setTimeout(openGéométrie,680);
     });
-    
-    
 
     /******************* OUVERTURE NAV 3 NOTION DE FONCTION *******************/
     
@@ -347,9 +332,8 @@ function init() {
         
         setTimeout(openNotionFonction,500); 
     });
-    
-    
-       /******************* OUVERTURE NAV 3 FONCTION LINEAIRE *******************/
+
+    /******************* OUVERTURE NAV 3 FONCTION LINEAIRE *******************/
     
     $("#FonctionLineaire").click(function(){
         
@@ -364,7 +348,7 @@ function init() {
         setTimeout(openFonctionLineaire,500); 
     });
     
-       /******************* OUVERTURE NAV 3 STATISTIQUES *******************/
+    /******************* OUVERTURE NAV 3 STATISTIQUES *******************/
     
     $("#Statistique").click(function(){
         closeFonctionLineaire();
@@ -378,8 +362,7 @@ function init() {
         setTimeout(openStatistique,500); 
     });
     
-    
-       /******************* OUVERTURE NAV 3 PROBABILITE *******************/
+    /******************* OUVERTURE NAV 3 PROBABILITE *******************/
     
     $("#Probabilité").click(function(){
         closeFonctionLineaire();
@@ -393,7 +376,7 @@ function init() {
         setTimeout(openProbabilité,500); 
     });
     
-       /******************* OUVERTURE NAV 3 NOMBRES *******************/
+    /******************* OUVERTURE NAV 3 NOMBRES *******************/
     
     $("#Nombres").click(function(){
         closeFonctionLineaire();
@@ -407,8 +390,7 @@ function init() {
         setTimeout(openNombres,500); 
     });
     
-    
-       /******************* OUVERTURE NAV 3 CALCULS *******************/
+    /******************* OUVERTURE NAV 3 CALCULS *******************/
     
     $("#Calculs").click(function(){
         closeFonctionLineaire();
@@ -422,8 +404,7 @@ function init() {
         setTimeout(openCalculs,500); 
     });
     
-    
-       /******************* OUVERTURE NAV 3 ECRITURES *******************/
+    /******************* OUVERTURE NAV 3 ECRITURES *******************/
     
     $("#Ecritures").click(function(){
         closeFonctionLineaire();
@@ -437,7 +418,7 @@ function init() {
         setTimeout(openEcritures,500); 
     });
     
-       /******************* OUVERTURE NAV 3 EQUATIONS *******************/
+    /******************* OUVERTURE NAV 3 EQUATIONS *******************/
     
     $("#Equations").click(function(){
         closeFonctionLineaire();
@@ -451,7 +432,7 @@ function init() {
         setTimeout(openEquations,500); 
     });
     
-       /******************* OUVERTURE NAV 3 FIGURES *******************/
+    /******************* OUVERTURE NAV 3 FIGURES *******************/
     
     $("#Figures").click(function(){
         closeConfigurationEspace()
@@ -461,9 +442,7 @@ function init() {
         setTimeout(openFigures,500); 
     });
     
-    
-    
-           /******************* OUVERTURE NAV 3 CONFIGURATION ESPACES *******************/
+    /******************* OUVERTURE NAV 3 CONFIGURATION ESPACES *******************/
     
     $("#ConfigurationEspace").click(function(){
         closeFigures()
@@ -473,8 +452,7 @@ function init() {
         setTimeout(openConfigurationEspace,500); 
     });
     
-    
-           /******************* OUVERTURE NAV 3 AIRES *******************/
+    /******************* OUVERTURE NAV 3 AIRES *******************/
     
     $("#Aires").click(function(){
         closeConfigurationEspace()
@@ -484,8 +462,7 @@ function init() {
         setTimeout(openAires,500); 
     });
     
-    
-           /******************* OUVERTURE NAV 3 GRANDEURS *******************/
+    /******************* OUVERTURE NAV 3 GRANDEURS *******************/
     
     $("#Grandeurs").click(function(){
         closeConfigurationEspace()
@@ -495,10 +472,7 @@ function init() {
         setTimeout(openGrandeurs,500); 
     });
     
-    
-    
-    
-     /****************** FERMETURE *********************/
+    /****************** FERMETURE *********************/
 
     $("main,h1").click(function(){
         closeNotionFonction();
@@ -520,9 +494,5 @@ function init() {
         setTimeout(closeMenu,680);
   
     });
-    
-    /********************************************************/
-    
-
     
 }
