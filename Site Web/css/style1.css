@@ -299,7 +299,19 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 }
 
 
+#index1 {
+    margin :auto;
+    height : 100px;
+    width : 700px;
+    margin-top: 150px;
+}
 
+#index1 p{
+    color : white;
+    font-size: 1.8em;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+}
 
 /*****************************************************************
 ********************* COURS **************************************
