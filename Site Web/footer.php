@@ -1,5 +1,5 @@
 <footer>
-    <p><a href="#">Contact</a></p>
+    <p><a href="contact.php">Contact</a></p>
 </footer>
 
      <!-- Import de la bibliothèque JQuery -->
