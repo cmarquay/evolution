@@ -79,13 +79,22 @@ function init() {
   
     /****************** FERMETURE *********************/
 
-    $("main,h1").click(function(){
-
-        closeAlgèbre();
-        closeGéométrie();
-        
-        setTimeout(closeMenu,340);
-  
+    var menu = $('#menu');
+    var menu1 = $('#SousListe1');
+    
+    $(document.body).click(function(e){
+        if(!$(e.target).is(menu)&&!$.contains(menu[0],e.target) && !$(e.target).is(menu1)&&!$.contains(menu1[0],e.target)){
+            
+            closeAlgèbre();
+            closeGéométrie();
+            setTimeout(closeMenu,340);
+        } 
     });
+    
+    
+    
+    
+    
+    
     
 }
