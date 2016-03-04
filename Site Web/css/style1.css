@@ -209,86 +209,30 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 .nav2 ul li {
     
-    height: 50px;
-    padding-top :25px;
-    padding-bottom: 25px;
+    height: 100px;
+   /* padding-top :25px;
+    padding-bottom: 25px;*/
     text-align: center;
+   
     
 }
 
 .nav2 ul li a{
+    display: block;
     text-decoration: none;
     color: white;
     font-size: 1.3em;
     font-family: 'Nunito', sans-serif;
-    line-height: 50px;
+    line-height: 100px;
+    height : 100px;
+    width: 500px;
+    
 }
 
 .nav2 ul li:hover {
     background-color: rgb(39,58,92); 
     border :  2px solid #ED5153;   
 }
-
-
-/*********************** SOUS MENU CHAPITRES ******************************/
-
-
-
-.nav3 {
-    position: absolute; 
-    width: 0;
-    height: 850px;  
-    left: 700px;
-    overflow: hidden;
-    z-index: 2;
-}
-
-.nav3 h3 {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: gainsboro;
-    border: solid 2px black;
-    
-}
-
-.nav3 ul{
-    position: relative;
-    height :850px;
-    width: 0;
-   /* background-color: rgb(39,58,92); */
-    overflow: hidden;
-    background: linear-gradient(rgb(39,58,92),rgb(67,99,158));  
-    
-}
-
-.nav3 ul li {
-    
-    height: 100px;
-   /* padding-top :25px;
-    padding-bottom: 25px;*/
-    text-align: center;
-    
-}
-
-.nav3 ul li a{
-    display: inline-block;
-    text-decoration: none;
-    color : white;
-    font-size: 1.3em;
-    font-family: 'Nunito', sans-serif;
-    line-height: 100px;
-    height: 100px;
-    width: 200px;
-}
-
-.nav3 ul li:hover {
-    background-color: rgb(39,58,92); 
-    border :  2px solid #ED5153;   
-}
-
-
-
 
 
 
