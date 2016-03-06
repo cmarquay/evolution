@@ -9,7 +9,7 @@ USE BDDevolution;
 -- Table `Individu`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Individu` (
-  `Identifient` BIGINT NOT NULL AUTO_INCREMENT,
+  `Identifient` INT NOT NULL AUTO_INCREMENT,
   `Pseudo` VARCHAR(128) NOT NULL,
   `Email` VARCHAR(128) NOT NULL,
   `Nom` VARCHAR(128) NOT NULL,
