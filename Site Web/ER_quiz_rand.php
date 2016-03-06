@@ -10,10 +10,10 @@ function question1(){
 	$sup=$rand*$rand3;
     $inf=$rand1*$rand2;
     do{
-        pgcd=gmp_gcd($sup,$inf);
+        $pgcd=gmp_gcd($sup,$inf);
         $sup=$sup/$pgcd;
         $inf=$inf/$pgcd;
-    }while(gmp_gcd($sup,sinf)!=1);
+    }while(gmp_gcd($sup,$inf)!=1);
         
     $bonne=($sup)." / ".($inf);
 	
@@ -104,11 +104,11 @@ function question4(){
     $rand1=rand(1,20);
     $enoce="Quel est l'inverse de ".($rand)."/".($rand1)." ?";
 	    
-    $bonne= ($rand1)."/".($rand).;
+    $bonne= ($rand1)."/".($rand);
 	
 	$mauvaise_list=array(
 		0=>"-".($rand)."/".($rand1),
-		1="-".($rand)."/-".($rand1),
+		1=>"-".($rand)."/-".($rand1),
 		2=>"-".($rand1)."/".($rand),
 		3=>($rand1)*($rand));
 	shuffle($mauvaise_list);
@@ -163,7 +163,7 @@ function question6(){
     $rand1=rand(1,100);
     $enoce="PGCD(".($rand).",".($rand1).") ?";
 	    
-    $bonne=gmp_gcd ($rand1,$rand).;
+    $bonne=gmp_gcd ($rand1,$rand);
 	
 	$mauvaise_list=array(
 		0=>$bonne-rand(1,5),
@@ -194,7 +194,7 @@ function question7(){
 	$rand2=rand(1,10);
     $enoce="Comment simplifier".($rand*$rand2)."/".($rand1*$rand2)." ?";
 	    
-    $bonne=($rand)."/".($rand1).;
+    $bonne=($rand)."/".($rand1);
 	
 	$mauvaise_list=array(
 		0=>$bonne-rand(1,5),
@@ -223,9 +223,9 @@ function question8(){
 	$rand=rand(1,10);
     $rand1=rand(1,10);
 	$rand2=rand(1,10);
-    $enoce=""Lequel est divisible par.($rand)." ?";
+    $enoce="Lequel est divisible par".($rand)." ?";
 	    
-    $bonne=($rand*$rand1).;
+    $bonne=($rand*$rand1);
 	
 	$mauvaise_list=array(
 		0=>$bonne-rand(1,6),

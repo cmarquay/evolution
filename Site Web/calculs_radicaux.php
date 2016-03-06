@@ -30,6 +30,7 @@
     <p>Si a et b sont deux nombres positifs, et b différent de zéro, alors <sup>√a</sup>∕<sub>√b</sub> = √(<sup>a</sup>∕<sub>b</sub>)</p>
 
     <h4><a href="cours/calculsRadicaux.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
+    <h4><a href="CER_quiz.php" target=_blank/>Accès au quiz</a></h4>
 
 </main>
 

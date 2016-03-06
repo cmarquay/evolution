@@ -119,10 +119,10 @@ function question5(){
 	$bonne=$rand*$rand;
 	
 	$mauvaise_list=array(
-		0=>"l'équation admet une solution : x = ".($rand*$rand).,
+		0=>"l'équation admet une solution : x = ".($rand*$rand),
 		1=>"l'équation n'a pas de solution",
-		2=>"l'équation admet une solution : x = "$rand,
-		3=>"l'équation admet une solution : x = -"$rand)
+		2=>"l'équation admet une solution : x = ".$rand,
+		3=>"l'équation admet une solution : x = -".$rand);
 	shuffle($mauvaise_list);
 	
 	$bonne_rep=rand(0,3);

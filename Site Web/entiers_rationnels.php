@@ -34,6 +34,7 @@
         <p>8 est le PGCD de 24 et 32 car 8 x 3 = 24 et 8 x 4 = 32, puis 3 et 4 n'ont pas de diviseur commun. On écrit PGCD(24;32) = 8.</p>
 
     <h4><a href="cours/entiersRationnels.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
+    <h4><a href="ER_quiz.php" target=_blank/>Accès au quiz</a></h4>
 
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <p id="bas"><a href="#haut">1</a>   Rappels : critères de divisibilité</p>
