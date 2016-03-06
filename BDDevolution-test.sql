@@ -10,12 +10,12 @@ USE BDDevolution;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Individu` (
   `Identifient` INT NOT NULL AUTO_INCREMENT,
-  `Pseudo` VARCHAR(128) NOT NULL,
+  `Pseudo` VARCHAR(48) NOT NULL,
   `Email` VARCHAR(128) NOT NULL,
   `Nom` VARCHAR(128) NOT NULL,
   `Prenom` VARCHAR(128) NOT NULL,
-  `MotDePasse` VARCHAR(256) NOT NULL,
-  `Avatar` VARCHAR(256) NOT NULL,
+  `MotDePasse` VARCHAR(48) NOT NULL,
+  `Avatar` VARCHAR(128) NOT NULL,
   `Aires` INT NULL DEFAULT 0,
   `CalculsElementaires` INT NULL DEFAULT 0,
   `ChangementDunites` INT NULL DEFAULT 0,
