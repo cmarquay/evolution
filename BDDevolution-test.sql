@@ -9,7 +9,7 @@ USE BDDevolution;
 -- Table `Individu`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Individu` (
-  `Identifient` INT NOT NULL AUTO_INCREMENT,
+  `Identifiant` INT NOT NULL AUTO_INCREMENT,
   `Pseudo` VARCHAR(48) NOT NULL,
   `Email` VARCHAR(128) NOT NULL,
   `Nom` VARCHAR(128) NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `Individu` (
   `Volumes` INT NOT NULL DEFAULT 0,
   `Score` INT NOT NULL DEFAULT 0,
   UNIQUE INDEX `MotDePasse_IdMDP_UNIQUE` (`MotDePasse` ASC),
-  PRIMARY KEY (`Identifient`),
+  PRIMARY KEY (`Identifiant`),
   UNIQUE INDEX `Pseudo_UNIQUE` (`Pseudo` ASC),
   UNIQUE INDEX `Email_UNIQUE` (`Email` ASC))
 ENGINE = InnoDB;

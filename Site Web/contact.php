@@ -4,7 +4,7 @@
 ?>
 <main id="contact">
 
-<div class="contact">
+<div class="formulaire">
     <form method="post" action="index.php">
     
         <label>Nom</label>    

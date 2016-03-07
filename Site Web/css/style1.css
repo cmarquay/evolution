@@ -263,8 +263,6 @@ header nav ul>li:hover:before, header nav ul>li:focus:before, header nav ul>li:a
 
 
 
-
-
 /***** MISE EN PAGE D'UN COURS *****/
 /*** lui appliquer class="Cours" ***/
 
@@ -533,7 +531,6 @@ span.frac > sub {
 
 
 
-
 /** MISE EN PAGE DU FOOTER **/
 
 footer {
@@ -558,26 +555,26 @@ footer p a {
 
 /** PAGE CONTACT **/
 
-.contact {
+.formulaire {
     width: 576px;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-.contact form {
-    margin: 0 auto;
+.formulaire form {
+    margin: auto;
     width: 459px;
 }
 
-.contact label {
+.formulaire label, .formulaire p {
     display: block;
     color: white;
     letter-spacing: 2px;
     margin-top: 20px;
 }
 
-.contact input, textarea {
+.formulaire input, textarea {
     width:439px;
 	height:27px;
 	background:#efefef;
@@ -596,7 +593,7 @@ textarea {
 }
 
 input:focus, textarea:focus {
-    border:2.5px solid #ED5153;
+    border: 2px solid #ED5153;
 }
 
 #submit {
@@ -615,13 +612,11 @@ input:focus, textarea:focus {
 .envoi {
     display: inline-block;
     color: black;
-    letter-spacing: 0.5px;
     font-weight: bold;
     background-color: #dedede;
     font-size: 1.3em;
     width: 400px;
     height: 100px;
-    border: 0.1px solid;
     text-align: center;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;

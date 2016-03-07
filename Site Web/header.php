@@ -9,6 +9,10 @@
 
 <!-- Creative Commons Attribution 3.0 France -->
 <!-- http://creativecommons.org/licenses/by/3.0/fr/legalcode -->
+<?php
+    $sessionActive=0;
+    include_once("session.php");
+?>
 
 <!DOCTYPE html>
 <head>
@@ -17,18 +21,18 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Brillet Camille, Fillon Aurélien, Foissac Nicola, Hanotel Guillaume, Henry-Brûlé Raphaël, Marquay Christian"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!---- STYLE 1 ---->
-    <link title="css1" rel="stylesheet" href="css/min.style1.css"/>
-    <!---- INSERTION DE LA POLICE "Nunito" ---->
+    <!-- STYLE 1 -->
+    <link title="css1" rel="stylesheet" href="css/style1.css"/>
+    <!-- INSERTION DE LA POLICE "Nunito" -->
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-    <!---- INSERTION DE LA POLICE "Sevillana" ---->
+    <!-- INSERTION DE LA POLICE "Sevillana" -->
     <link href='https://fonts.googleapis.com/css?family=Sevillana' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
     <a href="index.php"><h1>Brevet Evolution</h1></a>
 
-    <!---- MENU DE NAVIGATION ---->
+    <!-- MENU DE NAVIGATION -->
     <nav>
         <ul>
 
@@ -37,12 +41,19 @@
             <li><a href="#">Quiz</a></li>
             <li><a href="#">Leaderboard</a></li>
 
-            <!---- CONNEXION/INSCRIPTION ---->
-
-            <div>
-                <li><a href="#">Connexion</a></li>
-                <li><a href="inscription.php">Inscription</a></li>
-            </div>
+            <!-- CONNEXION/INSCRIPTION -->
+            <?php
+                if($sessionActive) {
+                    echo "<div>";
+                    echo "<li><a href=\"deconnexion.php\">Déconnexion</a></li>";
+                    echo "</div>";
+                } else {
+                    echo "<div>";
+                    echo "<li><a href=\"connexion.php\">Connexion</a></li>";
+                    echo "<li><a href=\"inscription.php\">Inscription</a></li>";
+                    echo "</div>";
+                }
+            ?>
 
         </ul>
     </nav>
@@ -51,7 +62,7 @@
 
 
 
-           <!---- MENU COURS ---->      
+           <!-- MENU COURS -->      
             
     <div id="SousListe1" class="nav1">             
         <ul>
@@ -63,7 +74,7 @@
    
     
     
-    <!---- COURS ALGEBRE ---->
+    <!-- COURS ALGEBRE -->
     <div id="SousListeAlgèbre" class="nav2">
         <ul>
                 <li id="NotionFonction"><a href="notion_fonction.php">Notion de fonction</a></li>
@@ -76,7 +87,6 @@
                 <li id="Equations"><a href="equations_inequations.php">Équations et inéquations du premier degré</a></li>
         </ul>  
     </div>
-    <!------------------------------>
     
     
 
