@@ -8,8 +8,8 @@
         }
     }
 
-    function MailDansBase($email) {
-        $sql = "SELECT * FROM individu WHERE Email='$email'";
+    function DansBase($pseudo, $email) {
+        $sql = "SELECT Pseudo, Email FROM individu WHERE Pseudo='$pseudo' OR Email='$email'";
         $resultat = connexionPDO("localhost","root","","bddevolution")->query($sql);
         $info = $resultat->fetchAll(PDO::FETCH_ASSOC);
         if($info!=null) {

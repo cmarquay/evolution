@@ -22,7 +22,7 @@
     <meta name="author" content="Brillet Camille, Fillon Aurélien, Foissac Nicola, Hanotel Guillaume, Henry-Brûlé Raphaël, Marquay Christian"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- STYLE 1 -->
-    <link title="css1" rel="stylesheet" href="css/style1.css"/>
+    <link title="css1" rel="stylesheet" href="css/min.style1.css"/>
     <!-- INSERTION DE LA POLICE "Nunito" -->
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <!-- INSERTION DE LA POLICE "Sevillana" -->
@@ -49,10 +49,10 @@
                     echo "</li>";
                 } else {
                     echo "<li id='co1' class='co'>";
-                    echo "<a href=\"connexion.php\">Connexion</a>";
-                    echo "</li>";
-                    echo "<li id='co2' class='co'>";    
                     echo "<a href=\"inscription.php\">Inscription</a>";
+                    echo "</li>";
+                    echo "<li id='co2' class='co'>";
+                    echo "<a href=\"connexion.php\">Connexion</a>";
                     echo "</li>";
                 }
             ?>

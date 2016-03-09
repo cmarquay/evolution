@@ -16,13 +16,21 @@
                 $nom = addslashes(htmlEntities($_POST["nom"]));
                 $prenom = addslashes(htmlEntities($_POST["prenom"]));
                 $motDePasse = md5(addslashes(htmlEntities($_POST["motDePasse"])));
-                if(!MailDansBase($email)) {
+                if(!DansBase($pseudo, $email)) {
                     //On ajoute à la bdd l'utilisateur
                     $sql = "INSERT INTO individu VALUES('','$pseudo','$email','$nom','$prenom','$motDePasse'";
-                    if(isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
-                        $sql .= "";
+                    if(isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
+                        $avatar = "";
+                        if($_FILES["avatar"]["error"]==0) {
+                            //copie dans le fichier avatars
+                            $avatar = "images/avatars/$pseudo.jpg";
+                            move_uploaded_file($_FILES["avatar"]["tmp_name"],"$avatar");
+                        }
+                        $sql .= ",'$avatar'";
+                    } else {
+                        $sql .= ",'images/avatars/defaut.jpg'";
                     }
-                    $sql .= ",'','','','','','','','','','','','','','','','','');";
+                    $sql .= ",'','','','','','','','','','','','','','','','');";
                     $resultat = $connexion->query($sql);
                     //Fonction d'envoi du mail
                     $headers = "MIME-Version: 1.0\r\n";
@@ -33,7 +41,7 @@
                     mail($email,"Inscription sur BrevetEvolution",$message,$headers);
                     header("Location:connexion.php");
                 } else {
-                    $probleme = "Cette adresse mail est déja dans la base de données";
+                    $probleme = "Ce pseudo et/ou cette adresse mail est déjà dans la base de données";
                 }
             } else {
                 $probleme = "Email incorrect";
@@ -59,6 +67,9 @@
         <p><input type="text" id="edtPrenom" name="prenom" required /></p>
         <p><label for="edtMotDePasse" id="idMotDePasse">MOT DE PASSE *</label></p>
         <p><input type="password" id="edtMotDePasse" name="motDePasse" required /></p>
+        <p><label for="edtAvatar" id="idAvatar">AVATAR</label></p>
+        <p><input type="file" id="edtAvatar" name="avatar" accept="image/jpg" />
+        </p>
         <p class="submit"><input type="submit" id="submit" name="send" value="Envoyer" /></p>
         <p>Les champs marqués d'un * sont obligatoires</p>
         <?php echo "<p>".$probleme."</p>"; ?>
