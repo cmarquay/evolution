@@ -77,17 +77,16 @@ header nav ul li a {
 
 /************* MISE EN PAGE DU DIV DE LA LISTE (QUI COMPREND "Connexion" et "Inscription") *************/
 
-header nav ul div {
+
+header nav ul .co {
     float: right;
+}
+
+
+#co1 {
     margin-right: 40px;
-
 }
 
-/************* POLICE DE "Connexion" et "Inscription" *************/
-
-header nav ul div li a {
-    font-family: "Times New Roman",serif;
-}
 
 /************* HOVER DU NAV *************/
 

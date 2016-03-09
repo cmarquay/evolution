@@ -44,14 +44,16 @@
             <!-- CONNEXION/INSCRIPTION -->
             <?php
                 if($sessionActive) {
-                    echo "<div>";
-                    echo "<li><a href=\"deconnexion.php\">Déconnexion</a></li>";
-                    echo "</div>";
+                    echo "<li class='co' >";
+                    echo "<a href=\"deconnexion.php\">Déconnexion</a>";
+                    echo "</li>";
                 } else {
-                    echo "<div>";
-                    echo "<li><a href=\"connexion.php\">Connexion</a></li>";
-                    echo "<li><a href=\"inscription.php\">Inscription</a></li>";
-                    echo "</div>";
+                    echo "<li id='co1' class='co'>";
+                    echo "<a href=\"connexion.php\">Connexion</a>";
+                    echo "</li>";
+                    echo "<li id='co2' class='co'>";    
+                    echo "<a href=\"inscription.php\">Inscription</a>";
+                    echo "</li>";
                 }
             ?>
 
