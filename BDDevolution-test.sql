@@ -32,7 +32,6 @@ CREATE TABLE IF NOT EXISTS `Individu` (
   `Statistique` INT NOT NULL DEFAULT 0,
   `Volumes` INT NOT NULL DEFAULT 0,
   `Score` INT NOT NULL DEFAULT 0,
-  UNIQUE INDEX `MotDePasse_IdMDP_UNIQUE` (`MotDePasse` ASC),
   PRIMARY KEY (`Identifiant`),
   UNIQUE INDEX `Pseudo_UNIQUE` (`Pseudo` ASC),
   UNIQUE INDEX `Email_UNIQUE` (`Email` ASC))

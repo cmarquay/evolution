@@ -16,21 +16,18 @@
                 $nom = addslashes(htmlEntities($_POST["nom"]));
                 $prenom = addslashes(htmlEntities($_POST["prenom"]));
                 $motDePasse = md5(addslashes(htmlEntities($_POST["motDePasse"])));
+                $avatar = "images/avatars/defaut.jpg";
                 if(!DansBase($pseudo, $email)) {
                     //On ajoute à la bdd l'utilisateur
                     $sql = "INSERT INTO individu VALUES('','$pseudo','$email','$nom','$prenom','$motDePasse'";
                     if(isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
-                        $avatar = "";
                         if($_FILES["avatar"]["error"]==0) {
                             //copie dans le fichier avatars
                             $avatar = "images/avatars/$pseudo.jpg";
                             move_uploaded_file($_FILES["avatar"]["tmp_name"],"$avatar");
                         }
-                        $sql .= ",'$avatar'";
-                    } else {
-                        $sql .= ",'images/avatars/defaut.jpg'";
                     }
-                    $sql .= ",'','','','','','','','','','','','','','','','');";
+                    $sql .= ",'$avatar',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);";
                     $resultat = $connexion->query($sql);
                     //Fonction d'envoi du mail
                     $headers = "MIME-Version: 1.0\r\n";

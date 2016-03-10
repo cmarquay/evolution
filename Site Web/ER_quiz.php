@@ -1,5 +1,13 @@
 <?php
-    session_start();
+    $titre = "Quiz";
+    include_once("header.php");
+
+    if(!$sessionActive) {
+        echo "<script type=\"text/javascript\">";
+        echo "alert('Vous devez être connecté pour accéder aux quiz');";
+        echo "window.history.back();";
+        echo "</script>";
+    }
 
     /*J'initialise mes tableaux*/
     $question = array(
@@ -87,9 +95,6 @@
     }
     $_SESSION["quiz"]=$quiz;
     $_SESSION["points"]=$points;
-
-    $titre = "Quiz";
-    include_once("header.php");
 ?>
 <main class="Quiz">
     <h2>Quiz nombres entiers et rationnels</h2>
