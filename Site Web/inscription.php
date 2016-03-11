@@ -19,15 +19,18 @@
                 $avatar = "images/avatars/defaut.jpg";
                 if(!DansBase($pseudo, $email)) {
                     //On ajoute à la bdd l'utilisateur
-                    $sql = "INSERT INTO individu (`Pseudo`,`Email`,`Nom`,`Prenom`,`MotDePasse`,`Avatar`,`Aires`,`CalculsElementaires`,`ChangementDunites`,`Configurations`,`EcrituresLitterales`,`Equations`,`FonctionLineaire`,`Grandeurs`,`Inequations`,`NombresEntiers`,`NombresRationnels`,`NotionDeFonction`,`NotionDeProbabilite`,`Statistique`,`Volumes`,`Score`) VALUES('$pseudo','$email','$nom','$prenom','$motDePasse'";
+                    $sql1 = "INSERT INTO individu (`Pseudo`,`Email`,`Nom`,`Prenom`,`MotDePasse`";
+                    $sql2 = ") VALUES('$pseudo','$email','$nom','$prenom','$motDePasse'";
                     if(isset($_FILES["avatar"]) && !empty($_FILES["avatar"])) {
                         if($_FILES["avatar"]["error"]==0) {
                             //copie dans le fichier avatars
                             $avatar = "images/avatars/$pseudo.jpg";
+                            $sql1 .= ",`Avatar`";
+                            $sql2 .= ",'$avatar'";
                             move_uploaded_file($_FILES["avatar"]["tmp_name"],"$avatar");
                         }
                     }
-                    $sql .= ",'$avatar',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);";
+                    $sql = $sql1.$sql2.");";
                     $resultat = $connexion->query($sql);
                     //Fonction d'envoi du mail
                     $headers = "MIME-Version: 1.0\r\n";

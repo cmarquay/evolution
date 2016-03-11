@@ -43,7 +43,7 @@
     </ul>
 
     <h4><a href="cours/ecrituresLitterales.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
-    <h4><a href="EL_quiz.php" target=_blank/>Accès au quiz</a></h4>
+    <h4><a href="EL_quiz.php" />Accès au quiz</a></h4>
 
 </main>
 
