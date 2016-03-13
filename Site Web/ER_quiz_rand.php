@@ -6,7 +6,7 @@ function question1(){
     $rand1=rand(1,20);
     $rand2=rand(1,20);
     $rand3=rand(1,20);
-	$enoce="(".($rand)."/".($rand1).")/(".($rand2)."/".($rand3).") =";
+	$enonce="(".($rand)."/".($rand1).")/(".($rand2)."/".($rand3).") =";
 	$sup=$rand*$rand3;
     $inf=$rand1*$rand2;
     do{
@@ -19,9 +19,9 @@ function question1(){
 	
 	$mauvaise_list=array(
 		0=>($rand * $rand2)."/".($rand1 * $rand3),
-		1=>,
-		2=>,
-		3=>);
+		1=>"",
+		2=>"",
+		3=>"");
 	shuffle($mauvaise_list);
 	
 	$bonne_rep=rand(0,3);
@@ -34,16 +34,16 @@ function question1(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //"4 par rapport à 12"
 function question2(){
 	$rand=rand(1,20);
     $rand1=rand(1,20);
-    $enoce=($rand)." par rapport à ".($rand1*$rand);
+    $enonce=($rand)." par rapport à ".($rand1*$rand);
 	    
     $bonne= "est un diviseur";
 	
@@ -64,15 +64,15 @@ function question2(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //"Comment multiplie-t-on deux nombres rationnels ?"
 function question3(){
 	
-	$enoce="Comment multiplie-t-on deux nombres rationnels ?";
+	$enonce="Comment multiplie-t-on deux nombres rationnels ?";
 	
     $bonne="On multiplie les deux numérateurs entre eux et les deux dénominateurs entre eux";
 	
@@ -93,16 +93,16 @@ function question3(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //"Quel est l'inverse de 5/2 ?"
 function question4(){
 	$rand=rand(1,20);
     $rand1=rand(1,20);
-    $enoce="Quel est l'inverse de ".($rand)."/".($rand1)." ?";
+    $enonce="Quel est l'inverse de ".($rand)."/".($rand1)." ?";
 	    
     $bonne= ($rand1)."/".($rand);
 	
@@ -123,15 +123,15 @@ function question4(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //"Comment soustrait-on deux nombres relatifs ?"
 function question5(){
 	
-	$enoce="Comment multiplie-t-on deux nombres rationnels ?";
+	$enonce="Comment multiplie-t-on deux nombres rationnels ?";
 	
     $bonne="On multiplie les deux numérateurs entre eux et les deux dénominateurs entre eux";
 	
@@ -152,16 +152,16 @@ function question5(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //"PGCD(20,15)
 function question6(){
 	$rand=rand(1,100);
     $rand1=rand(1,100);
-    $enoce="PGCD(".($rand).",".($rand1).") ?";
+    $enonce="PGCD(".($rand).",".($rand1).") ?";
 	    
     $bonne=gmp_gcd ($rand1,$rand);
 	
@@ -182,9 +182,9 @@ function question6(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //Comment simplifier 36/63
@@ -192,7 +192,7 @@ function question7(){
 	$rand=rand(1,10);
     $rand1=rand(1,10);
 	$rand2=rand(1,10);
-    $enoce="Comment simplifier".($rand*$rand2)."/".($rand1*$rand2)." ?";
+    $enonce="Comment simplifier".($rand*$rand2)."/".($rand1*$rand2)." ?";
 	    
     $bonne=($rand)."/".($rand1);
 	
@@ -213,9 +213,9 @@ function question7(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //"Lequel est divisible par 7 ?"
@@ -223,7 +223,7 @@ function question8(){
 	$rand=rand(1,10);
     $rand1=rand(1,10);
 	$rand2=rand(1,10);
-    $enoce="Lequel est divisible par".($rand)." ?";
+    $enonce="Lequel est divisible par".($rand)." ?";
 	    
     $bonne=($rand*$rand1);
 	
@@ -244,9 +244,9 @@ function question8(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 ?>

@@ -2,7 +2,7 @@
 //"√(-2 x -2) =",
 function question1(){
 	$rand=rand(1,10);
-	$enoce="√(-".($rand)." x -".($rand).") =";
+	$enonce="√(-".($rand)." x -".($rand).") =";
 	$bonne=$rand;
 	
 	$mauvaise_list=array(
@@ -23,16 +23,16 @@ function question1(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //√(16/49) =
 function question2(){
 	$rand1=rand(1,10);
 	$rand2=rand(1,10);
-	$enoce="√(".($rand1*$rand1)."/".($rand2*$rand2).") =";
+	$enonce="√(".($rand1*$rand1)."/".($rand2*$rand2).") =";
 	$bonne=$rand1/$rand2;
 	
 	$mauvaise_list=array(
@@ -52,15 +52,15 @@ function question2(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 //√(49 x 25) =
 function question3(){
 	$rand1=rand(1,10);
 	$rand2=rand(1,10);
-	$enoce="√(".($rand1*$rand1)."x".($rand2*$rand2).") =";
+	$enonce="√(".($rand1*$rand1)."x".($rand2*$rand2).") =";
 	$bonne=$rand1*$rand2;
 	
 	$mauvaise_list=array(
@@ -80,15 +80,15 @@ function question3(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //√(5929)² ="
 function question4(){
 	$rand=rand(1,100);
-	$enoce="√".($rand*$rand).")² =";
+	$enonce="√".($rand*$rand).")² =";
 	$bonne=$rand*$rand;
 	
 	$mauvaise_list=array(
@@ -107,15 +107,15 @@ function question4(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //Si x² = 64, alors
 function question5(){
 	$rand=rand(1,10);
-	$enoce="i x² = ".($rand*$rand).", alors";
+	$enonce="i x² = ".($rand*$rand).", alors";
 	$bonne=$rand*$rand;
 	
 	$mauvaise_list=array(
@@ -135,16 +135,16 @@ function question5(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //√(20) x √(17) =
 function question6(){
 	$rand1=rand(1,50);
 	$rand2=rand(1,50);
-	$enoce="√(".($rand1)." x ".($rand2).") =";
+	$enonce="√(".($rand1)." x ".($rand2).") =";
 	$bonne="√".$rand1*$rand2;
 	
 	$mauvaise_list=array(
@@ -163,16 +163,16 @@ function question6(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //√(15) / √(28) =
 function question7(){
 	$rand1=rand(1,50);
 	$rand2=rand(1,50);
-	$enoce="√(".($rand1)." / ".($rand2).") =";
+	$enonce="√(".($rand1)." / ".($rand2).") =";
 	$bonne="√".$rand1/$rand2;
 	
 	$mauvaise_list=array(
@@ -191,16 +191,16 @@ function question7(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //1 / √(84)=a finir
 function question8(){
 	$rand1=rand(1,20);
 	$rand2=rand(1,20);
-	$enoce="1 / √".($rand1*$rand1*$rand2).") =";
+	$enonce="1 / √".($rand1*$rand1*$rand2).") =";
 	$bonne="1/(".$rand1."√".$rand2.")";
 	
 	$mauvaise_list=array(
@@ -219,16 +219,16 @@ function question8(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //√(45) ="
 function question9(){
 	$rand1=rand(1,50);
 	$rand2=rand(1,50);
-	$enoce="√(".($rand1*$rand1*$rand2).") =";
+	$enonce="√(".($rand1*$rand1*$rand2).") =";
 	$bonne=$rand1."√".$rand2;
 	
 	$mauvaise_list=array(
@@ -248,9 +248,9 @@ function question9(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 //"√(3/2) ="
@@ -258,7 +258,7 @@ function question9(){
 function question10(){
 	$rand1=rand(2,50);
 	$rand2=rand(2,50);
-	$enoce="√(".($rand1)."/".($rand2).") =";
+	$enonce="√(".($rand1)."/".($rand2).") =";
 	$bonne="√".($rand1*$rand2)."/".$rand2;
 	
 	$mauvaise_list=array(
@@ -278,9 +278,9 @@ function question10(){
 	}
     
 
-	return array("enoce"=>$enoce,
+	return array("enonce"=>$enonce,
 		"bonne_rep"=>$bonne_rep,
-		"reponce"=>$retour);
+		"reponses"=>$retour);
 }
 
 
