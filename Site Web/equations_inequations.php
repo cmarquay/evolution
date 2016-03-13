@@ -31,7 +31,7 @@
             <p>Si c < 0, a > b → a x c < b x c → <sup>a</sup>∕<sub>c</sub> < <sup>b</sup>∕<sub>c</sub></p>
 
         <h4><a href="cours/equationsInequations.pdf" target=_blank/>Télécharger le cours en PDF</a></h4>
-        <h4><a href="EI_quiz.php" target=_blank/>Accès au quiz</a></h4>
+        <h4><a href="EI_quiz.php" />Accès au quiz</a></h4>
 
     </main>
 

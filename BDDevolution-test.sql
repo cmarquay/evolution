@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `Individu` (
   `Nom` VARCHAR(128) NOT NULL,
   `Prenom` VARCHAR(128) NOT NULL,
   `MotDePasse` VARCHAR(48) NOT NULL,
-  `Avatar` VARCHAR(128) NOT NULL,
+  `Avatar` VARCHAR(128) NOT NULL DEFAULT 'images/avatars/defaut.jpg',
   `Aires` INT NOT NULL DEFAULT 0,
   `CalculsElementaires` INT NOT NULL DEFAULT 0,
   `ChangementDunites` INT NOT NULL DEFAULT 0,
@@ -32,7 +32,6 @@ CREATE TABLE IF NOT EXISTS `Individu` (
   `Statistique` INT NOT NULL DEFAULT 0,
   `Volumes` INT NOT NULL DEFAULT 0,
   `Score` INT NOT NULL DEFAULT 0,
-  UNIQUE INDEX `MotDePasse_IdMDP_UNIQUE` (`MotDePasse` ASC),
   PRIMARY KEY (`Identifiant`),
   UNIQUE INDEX `Pseudo_UNIQUE` (`Pseudo` ASC),
   UNIQUE INDEX `Email_UNIQUE` (`Email` ASC))
